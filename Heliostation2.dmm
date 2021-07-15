@@ -28447,6 +28447,12 @@
 "bPR" = (
 /obj/structure/cable,
 /obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
 /area/science)
 "bPT" = (
@@ -38224,11 +38230,11 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science/xenobiology)
 "cBY" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/white,
+/area/science)
 "cBZ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -38410,12 +38416,11 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cCN" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
+/area/engineering/atmos/upper)
 "cCO" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/floor/iron,
@@ -38445,21 +38450,8 @@
 /turf/open/floor/iron,
 /area/maintenance/solars/port/aft)
 "cCS" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 6
-	},
-/obj/machinery/door/airlock/atmos{
-	name = "Turbine Access";
-	req_access_txt = "24"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
 	},
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -38788,6 +38780,26 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
+"cEm" = (
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 6
+	},
+/obj/machinery/door/airlock/atmos{
+	name = "Turbine Access";
+	req_access_txt = "24"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	dir = 1;
+	name = "Engineering yellow corner"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	name = "Engineering yellow corner"
+	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cEn" = (
@@ -48902,11 +48914,9 @@
 /area/hallway/primary/starboard)
 "qaf" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 10
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 9
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
+	dir = 1
 	},
 /turf/open/floor/iron/white,
 /area/science)
@@ -81598,7 +81608,7 @@ csI
 cxP
 cyR
 cFS
-cBY
+cCN
 cCP
 cEg
 cAk
@@ -82372,7 +82382,7 @@ mmv
 cBB
 cxT
 cEj
-cCS
+cEm
 cFq
 cHO
 cxT
@@ -83398,7 +83408,7 @@ cxT
 czn
 cAr
 cBF
-cCN
+cCS
 cBF
 cFu
 cGB
@@ -95446,7 +95456,7 @@ bJy
 bKQ
 bMG
 aPA
-bPT
+bxG
 bOz
 bOz
 caq
@@ -95703,7 +95713,7 @@ bAR
 bKR
 bMG
 bOz
-bPT
+bxG
 bOz
 cmy
 caq
@@ -96217,7 +96227,7 @@ npH
 bKT
 bIl
 bOz
-bPT
+bxG
 bOz
 bOz
 caq
@@ -96474,7 +96484,7 @@ npH
 bKU
 bIl
 bOz
-bPT
+bxG
 bOz
 aUn
 caq
@@ -96731,7 +96741,7 @@ npH
 bKV
 bIl
 bOz
-bPT
+bxG
 bOz
 bOz
 caq
@@ -96988,7 +96998,7 @@ npH
 bKW
 bMG
 bSX
-bPT
+bxG
 bOz
 bOz
 caq
@@ -97245,7 +97255,7 @@ npH
 bLo
 bMG
 bOv
-bPT
+bxG
 bOz
 aYA
 caq
@@ -97502,7 +97512,7 @@ bJP
 bIl
 bMG
 bOz
-bPT
+bxG
 bOz
 bci
 caq
@@ -97759,7 +97769,7 @@ bOz
 bOz
 blS
 bOz
-bPT
+bxG
 bOz
 bOz
 fpK
@@ -98016,7 +98026,7 @@ jJv
 uvU
 cgv
 ldq
-uvU
+cBY
 ldq
 cgv
 ldq
