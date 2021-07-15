@@ -34987,12 +34987,7 @@
 /obj/structure/cable,
 /obj/item/book/manual/wiki/atmospherics,
 /obj/item/storage/belt/utility/atmostech,
-/obj/machinery/power/apc/highcap/five_k{
-	areastring = "/area/engineering/atmos";
-	dir = 1;
-	name = "Atmospherics APC";
-	pixel_y = 23
-	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cqr" = (
@@ -36684,6 +36679,7 @@
 	},
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/machinery/light/directional/north,
+/obj/machinery/status_display/ai/directional/north,
 /turf/open/floor/iron/dark,
 /area/engineering/atmos)
 "cwu" = (
@@ -38500,6 +38496,11 @@
 /obj/machinery/atmospherics/components/binary/thermomachine/heater{
 	dir = 8
 	},
+/obj/machinery/requests_console/directional/east{
+	department = "Atmospherics";
+	departmentType = 4;
+	name = "Atmos RC"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cDh" = (
@@ -39332,17 +39333,11 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cGy" = (
-/obj/machinery/power/apc{
-	areastring = "/area/maintenance/disposal/incinerator";
-	dir = 8;
-	name = "Incinerator APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cGz" = (
@@ -39428,11 +39423,6 @@
 /area/engineering/main)
 "cHb" = (
 /obj/machinery/portable_atmospherics/canister,
-/obj/machinery/requests_console/directional/east{
-	department = "Atmospherics";
-	departmentType = 4;
-	name = "Atmos RC"
-	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cHc" = (
