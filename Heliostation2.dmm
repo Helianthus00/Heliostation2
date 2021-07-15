@@ -37410,6 +37410,7 @@
 	dir = 10
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cyW" = (
@@ -37703,6 +37704,7 @@
 	dir = 1;
 	name = "Mix to Filter"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cAk" = (
@@ -37737,10 +37739,10 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cAp" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
@@ -37802,12 +37804,15 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cAz" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cAA" = (
@@ -38096,7 +38101,6 @@
 /area/medical/medbay/central)
 "cBx" = (
 /obj/machinery/meter,
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 5
 	},
@@ -38135,10 +38139,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cBD" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
@@ -38172,10 +38176,8 @@
 /turf/open/floor/iron,
 /area/space)
 "cBK" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
-	dir = 8
-	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cBL" = (
@@ -38193,6 +38195,7 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
 	dir = 1
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cBR" = (
@@ -38409,7 +38412,9 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cCN" = (
-/obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cCO" = (
@@ -38441,32 +38446,21 @@
 /turf/open/floor/iron,
 /area/maintenance/solars/port/aft)
 "cCS" = (
-/obj/machinery/door/airlock/atmos{
-	name = "Turbine Access";
-	req_access_txt = "24"
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
 	},
 /obj/structure/cable,
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cCT" = (
-/obj/structure/cable,
 /obj/effect/landmark/blobstart,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 5
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cCU" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -38503,8 +38497,8 @@
 /area/engineering/atmos/upper)
 "cDd" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
+/obj/machinery/atmospherics/components/binary/thermomachine/heater{
+	dir = 8
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
@@ -38736,21 +38730,18 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cEe" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/green/visible{
 	dir = 10
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cEf" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/yellow/visible{
 	dir = 8
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cEg" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4;
 	name = "Mix to Distro"
@@ -38764,30 +38755,42 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "cEj" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 6
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/visible{
+	dir = 4
 	},
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
 "cEk" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/maintenance/disposal/incinerator)
+"cEl" = (
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
-"cEl" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 4;
-	name = "atmospherics mix pump"
-	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
 "cEm" = (
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
-	dir = 10
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 6
 	},
+/obj/machinery/door/airlock/atmos{
+	name = "Turbine Access";
+	req_access_txt = "24"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	dir = 1;
+	name = "Engineering yellow corner"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	name = "Engineering yellow corner"
+	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cEn" = (
@@ -38826,7 +38829,6 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "cEy" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/visible{
 	dir = 4
 	},
@@ -38846,13 +38848,10 @@
 /turf/open/floor/plating/grass,
 /area/security/prison)
 "cEH" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	areastring = "/area/engineering/atmos/upper";
-	dir = 4;
-	name = "Atmospherics Upper APC";
-	pixel_x = 25
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
+	dir = 5
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cEI" = (
@@ -39038,23 +39037,23 @@
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
 "cFr" = (
-/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cFs" = (
-/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 4;
-	name = "Port Out"
+	name = "atmospherics mix pump"
 	},
-/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cFt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
-	dir = 4
+/obj/machinery/atmospherics/pipe/smart/simple/brown/visible{
+	dir = 10
 	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
@@ -39062,6 +39061,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/orange/visible{
 	dir = 6
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cFv" = (
@@ -39178,11 +39178,7 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "cFS" = (
-/obj/machinery/requests_console/directional/east{
-	department = "Atmospherics";
-	departmentType = 4;
-	name = "Atmos RC"
-	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cFT" = (
@@ -39270,13 +39266,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"cGj" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/cyan/visible,
-/turf/open/floor/iron,
-/area/engineering/atmos)
 "cGk" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/o2{
 	dir = 4
@@ -39289,16 +39278,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"cGm" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "CO2 Outlet Pump"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos)
 "cGn" = (
 /obj/machinery/atmospherics/components/trinary/filter/atmos/plasma{
 	dir = 4
@@ -39306,10 +39285,10 @@
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cGo" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/bridge_pipe/orange/visible,
+/obj/machinery/atmospherics/pipe/smart/simple/orange/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cGp" = (
@@ -39327,11 +39306,11 @@
 /turf/open/floor/plating,
 /area/engineering/atmos/upper)
 "cGs" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible,
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4;
 	name = "Unfiltered to Mix"
 	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cGt" = (
@@ -39361,16 +39340,23 @@
 	pixel_y = 1
 	},
 /obj/structure/cable,
+/obj/machinery/atmospherics/components/unary/portables_connector/visible{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cGz" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 4;
+	name = "Port Out"
+	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cGA" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/brown/visible,
+/obj/machinery/atmospherics/pipe/smart/manifold/brown/visible{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cGB" = (
@@ -39442,6 +39428,11 @@
 /area/engineering/main)
 "cHb" = (
 /obj/machinery/portable_atmospherics/canister,
+/obj/machinery/requests_console/directional/east{
+	department = "Atmospherics";
+	departmentType = 4;
+	name = "Atmos RC"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cHc" = (
@@ -39552,7 +39543,10 @@
 	dir = 8;
 	name = "Security red corner"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	name = "N2 Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cHo" = (
@@ -39604,7 +39598,10 @@
 	dir = 8;
 	name = "Command blue corner"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	name = "O2 Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cHs" = (
@@ -39654,7 +39651,10 @@
 	alpha = 255;
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
+/obj/machinery/atmospherics/components/binary/pump/on{
+	dir = 1;
+	name = "Air Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cHw" = (
@@ -39717,7 +39717,10 @@
 	color = "#000000";
 	name = "dark corner"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1;
+	name = "CO2 Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cHA" = (
@@ -39778,7 +39781,10 @@
 	dir = 8;
 	name = "Prison Orange"
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1;
+	name = "Plasma Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cHE" = (
@@ -39943,17 +39949,17 @@
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cHQ" = (
-/obj/machinery/computer/atmos_control/incinerator{
-	dir = 1
-	},
 /obj/machinery/computer/security/telescreen/turbine{
 	dir = 1;
 	pixel_y = -30
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible{
 	dir = 4
 	},
+/obj/machinery/computer/atmos_control/incinerator{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cHR" = (
@@ -39965,7 +39971,6 @@
 	pixel_x = 6;
 	pixel_y = -24
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/visible{
 	dir = 4
 	},
@@ -40201,7 +40206,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal/incinerator)
 "cIN" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/layer_manifold/scrubbers/hidden,
 /turf/closed/wall/r_wall,
 /area/maintenance/disposal/incinerator)
 "cIO" = (
@@ -40311,7 +40316,10 @@
 	alpha = 255;
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
+/obj/machinery/atmospherics/components/binary/pump{
+	dir = 1;
+	name = "N2O Outlet Pump"
+	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "cJl" = (
@@ -40438,6 +40446,12 @@
 	dir = 4
 	},
 /obj/machinery/light/small/directional/west,
+/obj/machinery/camera{
+	c_tag = "Atmospherics Turbine";
+	dir = 4;
+	name = "Turbine Camera";
+	network = list("ss13","engineering","atmos")
+	},
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
 "cJA" = (
@@ -41046,12 +41060,6 @@
 	luminosity = 2
 	},
 /obj/structure/cable,
-/obj/machinery/camera{
-	c_tag = "Atmospherics Turbine";
-	dir = 4;
-	name = "Turbine Camera";
-	network = list("ss13","engineering","atmos")
-	},
 /turf/open/floor/engine/vacuum,
 /area/maintenance/disposal/incinerator)
 "cMa" = (
@@ -44242,26 +44250,6 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
 /turf/open/floor/engine,
 /area/engineering/main)
-"cWz" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "N2 Outlet Pump"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos)
-"cWA" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "O2 Outlet Pump"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos)
 "cWB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -45700,16 +45688,6 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron,
 /area/space)
-"fZe" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
-	dir = 4
-	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "N2O Outlet Pump"
-	},
-/turf/open/floor/iron,
-/area/engineering/atmos)
 "fZf" = (
 /obj/item/target/syndicate,
 /turf/open/floor/iron,
@@ -45835,13 +45813,10 @@
 /turf/open/floor/iron/dark,
 /area/ai_monitored/security/armory)
 "gsR" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/pump/on{
-	dir = 1;
-	name = "Air Outlet Pump"
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/cyan/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "gth" = (
@@ -50984,13 +50959,10 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "wMF" = (
-/obj/machinery/atmospherics/pipe/smart/simple/green/visible{
+/obj/machinery/atmospherics/pipe/bridge_pipe/green/visible{
 	dir = 4
 	},
-/obj/machinery/atmospherics/components/binary/pump{
-	dir = 1;
-	name = "Plasma Outlet Pump"
-	},
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/floor/iron,
 /area/engineering/atmos)
 "wOw" = (
@@ -75224,7 +75196,7 @@ csA
 cCC
 cDS
 ctX
-cWz
+gsR
 cHn
 cIy
 cJs
@@ -76252,7 +76224,7 @@ csA
 cAe
 cDU
 cFg
-cWA
+gsR
 cHr
 cIy
 cJs
@@ -76766,7 +76738,7 @@ csA
 cAe
 cDV
 ctX
-cGj
+gsR
 mnv
 cIz
 cJt
@@ -78051,7 +78023,7 @@ cyG
 crj
 cAe
 cHw
-cGj
+gsR
 cHy
 cIA
 cJq
@@ -78308,7 +78280,7 @@ cyJ
 cCI
 cDX
 cFi
-cGm
+wMF
 cHz
 cID
 cJs
@@ -80364,7 +80336,7 @@ crj
 crj
 cCE
 cFi
-fZe
+wMF
 cJk
 cID
 cJw
@@ -81132,7 +81104,7 @@ cxN
 cyP
 cAi
 cBx
-cCN
+cAk
 cEe
 cFm
 cGt
@@ -81644,8 +81616,8 @@ csJ
 csI
 cxP
 cyR
-cAk
-cAk
+cFS
+cCN
 cCP
 cEg
 cAk
@@ -82417,9 +82389,9 @@ cxR
 cAn
 mmv
 cBB
-cCS
+cxT
 cEj
-cFq
+cEm
 cFq
 cHO
 cxT
@@ -83187,9 +83159,9 @@ csI
 cxT
 czm
 cXO
-cBF
+cEn
 cCW
-cEm
+cEn
 cFt
 cGA
 cHR
@@ -83445,8 +83417,8 @@ cxT
 czn
 cAr
 cBF
-cCW
-cEn
+cCS
+cBF
 cFu
 cGB
 cHS
