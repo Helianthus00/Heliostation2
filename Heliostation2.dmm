@@ -28680,7 +28680,7 @@
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden,
+/obj/machinery/atmospherics/pipe/bridge_pipe/supply/visible,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
 "bRc" = (
@@ -30160,7 +30160,7 @@
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden,
+/obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible,
 /turf/open/floor/engine,
 /area/science/mixing/chamber)
 "bXs" = (
@@ -38224,9 +38224,11 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science/xenobiology)
 "cBY" = (
-/obj/machinery/airalarm/directional/east,
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 4
+	},
 /turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
+/area/engineering/atmos/upper)
 "cBZ" = (
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
@@ -38408,11 +38410,12 @@
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "cCN" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/engineering/atmos/upper)
+/area/maintenance/disposal/incinerator)
 "cCO" = (
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible,
 /turf/open/floor/iron,
@@ -38442,8 +38445,21 @@
 /turf/open/floor/iron,
 /area/maintenance/solars/port/aft)
 "cCS" = (
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
+/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
+	dir = 6
+	},
+/obj/machinery/door/airlock/atmos{
+	name = "Turbine Access";
+	req_access_txt = "24"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	dir = 1;
+	name = "Engineering yellow corner"
+	},
+/obj/effect/turf_decal/tile/yellow{
+	color = "#FFD700";
+	name = "Engineering yellow corner"
 	},
 /obj/structure/cable,
 /turf/open/floor/iron,
@@ -38772,26 +38788,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/turf/open/floor/iron,
-/area/maintenance/disposal/incinerator)
-"cEm" = (
-/obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
-	dir = 6
-	},
-/obj/machinery/door/airlock/atmos{
-	name = "Turbine Access";
-	req_access_txt = "24"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	dir = 1;
-	name = "Engineering yellow corner"
-	},
-/obj/effect/turf_decal/tile/yellow{
-	color = "#FFD700";
-	name = "Engineering yellow corner"
-	},
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cEn" = (
@@ -39480,12 +39476,7 @@
 /turf/open/floor/engine,
 /area/engineering/main)
 "cHj" = (
-/obj/machinery/airalarm{
-	dir = 8;
-	frequency = 1459;
-	name = "Incinerator Chamber Air control";
-	pixel_x = 24
-	},
+/obj/machinery/airalarm/directional/east,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "cHm" = (
@@ -40432,15 +40423,15 @@
 	pixel_y = 24
 	},
 /obj/machinery/atmospherics/components/binary/pump/on,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden{
-	dir = 4
-	},
 /obj/machinery/light/small/directional/west,
 /obj/machinery/camera{
 	c_tag = "Atmospherics Turbine";
 	dir = 4;
 	name = "Turbine Camera";
 	network = list("ss13","engineering","atmos")
+	},
+/obj/machinery/atmospherics/pipe/bridge_pipe/scrubbers/visible{
+	dir = 4
 	},
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
@@ -40712,10 +40703,10 @@
 /obj/machinery/atmospherics/components/binary/pump/on{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden{
+/obj/machinery/light/small/directional/east,
+/obj/machinery/atmospherics/pipe/bridge_pipe/supply/visible{
 	dir = 4
 	},
-/obj/machinery/light/small/directional/east,
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
 "cKH" = (
@@ -81607,7 +81598,7 @@ csI
 cxP
 cyR
 cFS
-cCN
+cBY
 cCP
 cEg
 cAk
@@ -82381,7 +82372,7 @@ mmv
 cBB
 cxT
 cEj
-cEm
+cCS
 cFq
 cHO
 cxT
@@ -83407,7 +83398,7 @@ cxT
 czn
 cAr
 cBF
-cCS
+cCN
 cBF
 cFu
 cGB
@@ -83663,7 +83654,7 @@ cXT
 cug
 cyZ
 cEn
-cBY
+cEn
 cDh
 cEO
 cFT
