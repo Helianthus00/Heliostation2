@@ -1543,6 +1543,8 @@
 /area/security/execution/transfer)
 "afN" = (
 /obj/item/radio/intercom/directional/north,
+/obj/effect/landmark/start/security_officer,
+/obj/structure/chair,
 /turf/open/floor/iron,
 /area/security/office)
 "afO" = (
@@ -1551,8 +1553,6 @@
 /turf/open/floor/iron,
 /area/security/office)
 "afP" = (
-/obj/structure/chair,
-/obj/effect/landmark/start/security_officer,
 /obj/structure/sign/poster/official/space_cops{
 	pixel_y = 30
 	},
@@ -1747,19 +1747,22 @@
 /obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 1
 	},
-/turf/open/floor/iron,
-/area/security/office)
-"agI" = (
 /obj/structure/chair{
 	dir = 4
 	},
 /obj/effect/landmark/start/security_officer,
+/turf/open/floor/iron,
+/area/security/office)
+"agI" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
+/obj/structure/table,
+/obj/item/restraints/legcuffs,
+/obj/item/restraints/handcuffs,
 /turf/open/floor/iron,
 /area/security/office)
 "agJ" = (
@@ -1774,13 +1777,14 @@
 /turf/open/floor/iron,
 /area/security/office)
 "agK" = (
-/obj/structure/table,
-/obj/item/restraints/handcuffs,
-/obj/item/restraints/legcuffs,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/effect/landmark/start/security_officer,
+/obj/structure/chair{
 	dir = 8
 	},
 /turf/open/floor/iron,
@@ -1804,10 +1808,6 @@
 /area/security/processing)
 "agT" = (
 /obj/structure/cable,
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/effect/landmark/start/security_officer,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 9
 	},
@@ -1900,10 +1900,8 @@
 /area/medical/abandoned)
 "ahw" = (
 /obj/structure/cable,
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/effect/landmark/start/security_officer,
+/obj/structure/table,
+/obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron,
 /area/security/office)
 "ahx" = (
@@ -1919,14 +1917,18 @@
 /area/security/office)
 "ahy" = (
 /obj/structure/cable,
-/obj/structure/table,
-/obj/item/storage/fancy/donut_box,
+/obj/effect/landmark/start/security_officer,
+/obj/structure/chair{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/security/office)
 "ahC" = (
 /obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/chair{
-	dir = 8
+	dir = 4
 	},
 /obj/effect/landmark/start/security_officer,
 /turf/open/floor/iron,
@@ -1935,6 +1937,7 @@
 /obj/structure/sign/poster/official/random{
 	pixel_x = 30
 	},
+/obj/structure/stairs/east,
 /turf/open/floor/iron,
 /area/security/office)
 "ahL" = (
@@ -1974,10 +1977,8 @@
 /turf/open/floor/iron,
 /area/medical/abandoned)
 "ahW" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/effect/landmark/start/security_officer,
+/obj/structure/table,
+/obj/item/assembly/timer,
 /turf/open/floor/iron,
 /area/security/office)
 "ahX" = (
@@ -1986,16 +1987,8 @@
 /obj/item/radio/off,
 /turf/open/floor/iron,
 /area/security/office)
-"ahY" = (
-/obj/structure/table,
-/obj/item/assembly/timer,
-/turf/open/floor/iron,
-/area/security/office)
 "aif" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/effect/landmark/start/security_officer,
+/obj/structure/stairs/east,
 /turf/open/floor/iron,
 /area/security/office)
 "aij" = (
@@ -2055,8 +2048,10 @@
 /turf/open/floor/iron,
 /area/security/office)
 "aix" = (
-/obj/structure/table,
-/obj/item/book/manual/wiki/security_space_law,
+/obj/effect/landmark/start/security_officer,
+/obj/structure/chair{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/security/office)
 "aiy" = (
@@ -2149,10 +2144,6 @@
 /turf/open/floor/iron,
 /area/security/office)
 "ajj" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/effect/landmark/start/security_officer,
 /obj/machinery/camera{
 	c_tag = "Security Office - Table";
 	dir = 1;
@@ -2163,6 +2154,7 @@
 /area/security/office)
 "ajk" = (
 /obj/machinery/light/directional/east,
+/obj/structure/railing,
 /turf/open/floor/iron,
 /area/security/office)
 "ajl" = (
@@ -6078,15 +6070,10 @@
 /turf/open/floor/iron/showroomfloor,
 /area/security/warden)
 "awL" = (
-/obj/machinery/camera{
-	c_tag = "Brig W";
-	dir = 4;
-	name = "Security Camera";
-	network = list("ss13","security")
-	},
-/obj/machinery/firealarm/directional/west,
+/obj/structure/table,
+/obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/iron,
-/area/security/brig)
+/area/security/office)
 "awM" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
@@ -7290,6 +7277,12 @@
 /area/maintenance/port/fore)
 "azS" = (
 /obj/machinery/airalarm/directional/west,
+/obj/machinery/camera{
+	c_tag = "Brig W";
+	dir = 4;
+	name = "Security Camera";
+	network = list("ss13","security")
+	},
 /turf/open/floor/iron,
 /area/security/brig)
 "azU" = (
@@ -42023,6 +42016,10 @@
 /obj/structure/flora/ausbushes/leafybush,
 /turf/open/floor/plating/grass,
 /area/security/office)
+"fvg" = (
+/obj/machinery/firealarm/directional/west,
+/turf/open/floor/iron,
+/area/security/brig)
 "fwU" = (
 /obj/structure/closet/emcloset,
 /obj/machinery/light/directional/east,
@@ -43320,6 +43317,14 @@
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/open/floor/iron/dark,
 /area/security/execution/transfer)
+"ljK" = (
+/obj/machinery/light/directional/east,
+/obj/structure/railing{
+	dir = 1;
+	layer = 3.1
+	},
+/turf/open/floor/iron,
+/area/security/office)
 "ljM" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/floor/plating,
@@ -43344,6 +43349,13 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/hallway/primary/central)
+"lmp" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/iron,
+/area/security/office)
 "lnh" = (
 /obj/effect/loot_site_spawner,
 /turf/open/floor/plating,
@@ -76208,13 +76220,13 @@ alD
 akT
 alD
 alD
-awL
+alD
 axv
 alD
 aCn
 alD
 azS
-alD
+fvg
 awS
 aBH
 alD
@@ -76703,9 +76715,9 @@ aeG
 aff
 ady
 agH
-ajh
-ajh
-ajh
+ahC
+ahC
+ahC
 ajh
 ajw
 ajV
@@ -76962,8 +76974,8 @@ afN
 agI
 ahw
 ahW
-ahW
-ady
+awL
+lmp
 ahm
 alD
 akT
@@ -77475,7 +77487,7 @@ abK
 afP
 agK
 ahy
-ahY
+aix
 aix
 ajj
 abm
@@ -77731,9 +77743,9 @@ abc
 afi
 ajh
 agT
-ahC
-aif
-aif
+gdo
+ady
+ady
 ady
 abm
 ajY
@@ -77989,8 +78001,8 @@ afj
 afX
 ajk
 ahG
-ady
-ajk
+aif
+ljK
 ajt
 abm
 akl
