@@ -117,6 +117,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "az" = (
@@ -297,6 +298,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/security/prison/upper)
 "bm" = (
@@ -377,9 +379,13 @@
 /turf/open/floor/iron,
 /area/security/prison/safe)
 "bB" = (
-/obj/structure/cable,
-/turf/closed/wall/r_wall,
-/area/security/prison/garden)
+/obj/machinery/button/door/directional/south{
+	id = "permafrontshutters";
+	name = "Prison Entrance Shutters";
+	req_access_txt = "2"
+	},
+/turf/open/floor/iron,
+/area/security/prison/visit)
 "bF" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
@@ -1322,6 +1328,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 5
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "fo" = (
@@ -3143,14 +3150,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"lz" = (
-/obj/machinery/button/door/directional/south{
-	id = "permafrontshutters";
-	name = "Prison Entrance Shutters";
-	req_access_txt = "2"
-	},
-/turf/open/floor/iron,
-/area/security/prison/visit)
 "lA" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -5256,6 +5255,7 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/prisoner,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "tk" = (
@@ -7015,8 +7015,8 @@
 "zL" = (
 /obj/machinery/biogenerator,
 /obj/machinery/light/directional/east,
-/obj/machinery/power/apc/auto_name/south,
 /obj/structure/cable,
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "zM" = (
@@ -9696,6 +9696,7 @@
 	color = "#FF6700";
 	name = "Prison Orange"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/security/prison/upper)
 "Iz" = (
@@ -9991,6 +9992,7 @@
 /obj/item/seeds/corn,
 /obj/item/seeds/tomato,
 /obj/item/seeds/eggplant,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "JG" = (
@@ -10458,10 +10460,6 @@
 	initial_gas_mix = "n2=104;TEMP=293.15"
 	},
 /area/medical/medbay/zone2)
-"Ld" = (
-/obj/structure/cable,
-/turf/closed/wall/r_wall,
-/area/security/prison/upper)
 "Le" = (
 /obj/item/radio/intercom/directional/west,
 /obj/machinery/airalarm/directional/south,
@@ -11711,6 +11709,7 @@
 	color = "#FF6700";
 	name = "Prison Orange"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/security/prison/upper)
 "Pt" = (
@@ -12272,11 +12271,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/space)
-"Ri" = (
-/obj/structure/cable,
-/obj/effect/spawner/structure/window/reinforced,
-/turf/closed/wall/r_wall,
-/area/security/prison/workout)
 "Rj" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door/directional/north{
@@ -13040,6 +13034,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "TT" = (
@@ -14350,6 +14345,7 @@
 	},
 /obj/effect/spawner/lootdrop/prison_contraband,
 /obj/structure/closet/crate/bin,
+/obj/structure/cable,
 /turf/open/floor/iron/cafeteria,
 /area/security/prison/upper)
 "Yx" = (
@@ -14696,6 +14692,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/prison/garden)
 "ZL" = (
@@ -46972,11 +46969,11 @@ Il
 Sc
 FN
 Dy
-Dy
+yN
 Le
-bB
-ql
-ql
+wZ
+ct
+ct
 PG
 HM
 PG
@@ -47229,7 +47226,7 @@ JU
 Sc
 FN
 OL
-Dy
+yN
 OL
 lk
 EX
@@ -47467,7 +47464,7 @@ da
 dQ
 kr
 mZ
-lz
+bB
 SB
 SB
 Dc
@@ -49287,9 +49284,9 @@ yN
 yN
 yN
 zL
-bB
+wZ
 EX
-ql
+ct
 HM
 PG
 PG
@@ -49544,9 +49541,9 @@ Ye
 SS
 MW
 Rb
-Ld
+Rb
 EX
-ql
+ct
 HM
 PG
 PG
@@ -49801,9 +49798,9 @@ Kk
 kv
 kv
 TM
-Ld
+Rb
 EX
-ql
+ct
 HM
 PG
 PG
@@ -52628,9 +52625,9 @@ PQ
 Sr
 Mw
 zB
-Ld
+Rb
 EX
-ql
+ct
 HM
 PG
 PG
@@ -52887,7 +52884,7 @@ Rb
 Rb
 Rb
 EX
-ql
+ct
 HM
 PG
 PG
@@ -53144,7 +53141,7 @@ EX
 EX
 EX
 EX
-ql
+ct
 HM
 PG
 PG
@@ -53391,17 +53388,17 @@ aj
 TB
 ua
 EX
-ql
-ql
-ql
-ql
-ql
-ql
-ql
-ql
-ql
-ql
-ql
+ct
+ct
+ct
+ct
+ct
+ct
+ct
+ct
+ct
+ct
+ct
 HM
 PG
 PG
@@ -53648,7 +53645,7 @@ Kv
 Of
 ua
 EX
-ql
+ct
 HM
 HM
 HM
@@ -55183,7 +55180,7 @@ ua
 ua
 ua
 ua
-Ri
+ua
 xW
 xW
 xW
@@ -55697,7 +55694,7 @@ Mu
 Mu
 Mu
 Mu
-Ro
+ql
 UT
 Ro
 UT
