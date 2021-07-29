@@ -200,6 +200,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/science/breakroom)
+"aP" = (
+/obj/effect/landmark/start/scientist,
+/turf/open/floor/iron/white,
+/area/science/breakroom)
 "aR" = (
 /obj/item/toy/plush/slimeplushie,
 /turf/open/floor/engine,
@@ -1536,6 +1540,7 @@
 /area/service/abandoned_gambling_den)
 "gb" = (
 /obj/machinery/mecha_part_fabricator/maint,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/science/research/abandoned)
 "gc" = (
@@ -2865,6 +2870,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/delivery,
+/obj/machinery/light/small/directional/north,
 /turf/open/floor/iron,
 /area/science/research/abandoned)
 "kS" = (
@@ -2963,12 +2969,6 @@
 	},
 /turf/open/floor/iron/grimy,
 /area/space)
-"le" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/turf/open/floor/iron/white,
-/area/science/breakroom)
 "lf" = (
 /obj/structure/chair/stool/bar/directional/north,
 /obj/effect/turf_decal/tile{
@@ -3575,10 +3575,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/security/range)
-"ne" = (
-/obj/effect/landmark/start/scientist,
-/turf/open/floor/iron/white,
-/area/science/breakroom)
 "nf" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
@@ -4140,7 +4136,6 @@
 /area/security/prison/visit)
 "pp" = (
 /obj/machinery/suit_storage_unit/rd,
-/obj/machinery/light/blacklight/directional/north,
 /obj/structure/cable,
 /turf/open/floor/iron/white,
 /area/command/heads_quarters/rd)
@@ -4165,6 +4160,7 @@
 /obj/structure/closet/secure_closet/research_director,
 /obj/machinery/firealarm/directional/north,
 /obj/structure/cable,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/command/heads_quarters/rd)
 "pt" = (
@@ -9169,7 +9165,6 @@
 /obj/item/book/manual/wiki/plumbing,
 /obj/item/construction/plumbing,
 /obj/item/construction/plumbing,
-/obj/machinery/light/directional/west,
 /turf/open/floor/iron/white,
 /area/medical/chemistry)
 "GQ" = (
@@ -11048,9 +11043,18 @@
 /turf/open/floor/iron/dark,
 /area/security/range)
 "Nd" = (
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron/white,
-/area/medical/chemistry)
+/obj/structure/window/reinforced{
+	dir = 1;
+	layer = 2.9
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/turf/open/floor/glass/reinforced,
+/area/command/heads_quarters/rd)
 "Ng" = (
 /obj/structure/table,
 /obj/item/kitchen/fork/plastic,
@@ -11934,18 +11938,15 @@
 /turf/open/floor/iron,
 /area/commons/dorms)
 "PT" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 6
-	},
+/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 8
 	},
-/turf/open/floor/glass/reinforced,
-/area/command/heads_quarters/rd)
+/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/science/breakroom)
 "PV" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
@@ -12228,10 +12229,10 @@
 /area/service/hydroponics/upper)
 "QR" = (
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 8
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
+/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
 	dir = 1
 	},
 /turf/open/floor/iron/white,
@@ -13028,13 +13029,14 @@
 /turf/open/floor/glass/reinforced,
 /area/command/heads_quarters/rd)
 "Tz" = (
-/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
-	dir = 1
-	},
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/iron/white,
 /area/science/breakroom)
 "TA" = (
@@ -13691,16 +13693,11 @@
 /turf/open/floor/iron/white,
 /area/security/prison/work)
 "VF" = (
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
-	dir = 8
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/cable,
-/obj/machinery/power/apc/auto_name/north,
-/turf/open/floor/iron/white,
-/area/science/breakroom)
+/turf/open/floor/glass/reinforced,
+/area/command/heads_quarters/rd)
 "VG" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -14345,11 +14342,11 @@
 /turf/open/floor/iron,
 /area/security/office)
 "XV" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
 	},
-/turf/open/floor/glass/reinforced,
-/area/command/heads_quarters/rd)
+/turf/open/floor/iron/white,
+/area/science/breakroom)
 "XW" = (
 /turf/closed/wall,
 /area/engineering/atmos/upper)
@@ -59822,8 +59819,8 @@ KC
 iG
 gT
 gT
-PT
-XV
+Nd
+VF
 Ur
 bU
 EX
@@ -62392,7 +62389,7 @@ Bb
 Bb
 sO
 wq
-QR
+PT
 Wg
 uC
 sO
@@ -63163,8 +63160,8 @@ Bb
 Bb
 sO
 wq
-Tz
-le
+QR
+XV
 uC
 sO
 EX
@@ -64705,7 +64702,7 @@ Vf
 Ie
 sx
 sO
-VF
+Tz
 sx
 XY
 pl
@@ -64963,7 +64960,7 @@ Ie
 sx
 xb
 Ki
-ne
+aP
 XY
 sx
 sx
@@ -65199,7 +65196,7 @@ Hu
 Hu
 Hu
 Hu
-Nd
+Hu
 Hu
 Hu
 dG
