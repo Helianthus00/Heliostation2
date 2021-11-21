@@ -1709,6 +1709,16 @@
 	},
 /turf/open/floor/iron,
 /area/cargo/sorting)
+"fH" = (
+/obj/machinery/door/window/brigdoor{
+	dir = 1;
+	id = "supcell";
+	name = "Cargo Cell";
+	req_access_txt = "63"
+	},
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "fI" = (
 /obj/structure/window{
 	dir = 1
@@ -1722,6 +1732,12 @@
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/iron/dark,
 /area/cargo/sorting)
+"fJ" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 4
+	},
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "fK" = (
 /turf/closed/wall/r_wall,
 /area/command/bridge)
@@ -2007,6 +2023,13 @@
 /obj/structure/cable,
 /turf/open/floor/vault,
 /area/command/bridge)
+"gs" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/newscaster/directional/south,
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "gt" = (
 /turf/closed/wall,
 /area/cargo/warehouse)
@@ -2649,6 +2672,13 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/xenobiology)
+"in" = (
+/obj/machinery/door/airlock/mining{
+	name = "Quartermaster's Office";
+	req_access_txt = "41"
+	},
+/turf/open/floor/iron,
+/area/cargo/office)
 "io" = (
 /obj/machinery/button/door/directional/south{
 	id = "toxinsstorage";
@@ -3021,13 +3051,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/medical/break_room)
-"jF" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/machinery/newscaster/directional/south,
-/turf/open/floor/iron/dark,
-/area/security/checkpoint/supply)
 "jG" = (
 /obj/item/toy/plush/ratplush,
 /obj/structure/closet/crate/engineering,
@@ -3312,13 +3335,6 @@
 	},
 /turf/open/floor/wood,
 /area/service/bar)
-"kE" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/obj/machinery/airalarm/directional/south,
-/turf/open/floor/iron/dark,
-/area/security/checkpoint/supply)
 "kF" = (
 /turf/open/floor/plating,
 /area/maintenance/department/crew_quarters/dorms)
@@ -4307,7 +4323,6 @@
 	name = "Security Post - Cargo";
 	req_access_txt = "63"
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/red{
 	color = "#FF0000";
 	name = "Security red corner"
@@ -5593,6 +5608,12 @@
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron,
 /area/security/prison)
+"rr" = (
+/obj/structure/closet/secure_closet/brig{
+	name = "holding cell locker"
+	},
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "rs" = (
 /obj/structure/railing,
 /obj/effect/decal/cleanable/dirt,
@@ -6483,9 +6504,7 @@
 /turf/open/floor/iron/grimy,
 /area/service/chapel/office)
 "uf" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/cargo/office)
 "ug" = (
@@ -7335,9 +7354,12 @@
 /turf/open/floor/wood,
 /area/service/bar/atrium)
 "wP" = (
-/obj/structure/cable,
+/obj/machinery/door/airlock/mining/glass{
+	name = "Delivery Office";
+	req_access_txt = "50"
+	},
 /turf/open/floor/iron,
-/area/cargo/office)
+/area/cargo/sorting)
 "wQ" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -7440,6 +7462,14 @@
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/iron/white,
 /area/commons/dorms)
+"xi" = (
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
+	},
+/obj/machinery/power/apc/auto_name/south,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "xj" = (
 /obj/structure/sign/departments/restroom{
 	pixel_x = -30
@@ -7654,6 +7684,11 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
+"xL" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/space/basic,
+/area/security/checkpoint/supply)
 "xM" = (
 /obj/structure/chair/wood,
 /obj/effect/landmark/start/hangover,
@@ -9091,9 +9126,10 @@
 /turf/open/floor/iron/dark,
 /area/service/hydroponics/upper)
 "Cf" = (
-/obj/effect/turf_decal/stripes/line{
+/obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/cargo/office)
 "Cg" = (
@@ -9633,21 +9669,12 @@
 /turf/open/floor/iron/white,
 /area/science/breakroom)
 "DJ" = (
-/obj/machinery/door/airlock/security/glass{
-	id_tag = "supdoor";
-	name = "Cargo Cell";
-	req_access_txt = "63"
-	},
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/brown{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/red{
-	color = "#FF0000";
-	name = "Security red corner"
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Cargo Maintenance";
+	req_access_txt = "31"
 	},
 /turf/open/floor/iron,
-/area/security/checkpoint/supply)
+/area/maintenance/department/cargo)
 "DL" = (
 /obj/machinery/computer/upload/ai,
 /obj/structure/window/reinforced{
@@ -12104,8 +12131,8 @@
 /turf/open/floor/iron,
 /area/security/prison)
 "KU" = (
-/obj/structure/cable,
-/turf/open/floor/iron/dark,
+/obj/machinery/light/directional/south,
+/turf/open/floor/iron,
 /area/security/checkpoint/supply)
 "KV" = (
 /obj/machinery/door/airlock/command{
@@ -13436,6 +13463,13 @@
 "OX" = (
 /turf/open/floor/wood,
 /area/service/library/printer)
+"OY" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/obj/machinery/airalarm/directional/south,
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "OZ" = (
 /obj/structure/barricade/sandbags,
 /obj/structure/cable,
@@ -14162,6 +14196,12 @@
 "Rb" = (
 /turf/closed/wall/r_wall,
 /area/security/prison/upper)
+"Rc" = (
+/obj/structure/chair{
+	dir = 1
+	},
+/turf/open/floor/iron/dark,
+/area/security/checkpoint/supply)
 "Rd" = (
 /obj/machinery/camera{
 	c_tag = "Virology - Monkey Pen";
@@ -14282,7 +14322,20 @@
 /turf/open/floor/iron/white,
 /area/medical/chemistry)
 "Rw" = (
-/turf/open/floor/iron/dark,
+/obj/machinery/door/airlock/security/glass{
+	id_tag = "supdoor";
+	name = "Cargo Cell";
+	req_access_txt = "63"
+	},
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/red{
+	color = "#FF0000";
+	name = "Security red corner"
+	},
+/turf/open/floor/iron,
 /area/security/checkpoint/supply)
 "Ry" = (
 /turf/closed/wall/r_wall,
@@ -15223,15 +15276,12 @@
 /turf/open/floor/circuit/telecomms,
 /area/science/xenobiology)
 "UF" = (
-/obj/machinery/door/window/brigdoor{
-	dir = 1;
-	id = "supcell";
-	name = "Cargo Cell";
-	req_access_txt = "63"
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
 	},
 /obj/structure/cable,
-/turf/open/floor/iron/dark,
-/area/security/checkpoint/supply)
+/turf/open/floor/iron,
+/area/cargo/office)
 "UG" = (
 /obj/structure/chair/office,
 /turf/open/floor/carpet/orange,
@@ -15866,12 +15916,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/medical/virology)
-"WB" = (
-/obj/structure/chair{
-	dir = 1
-	},
-/turf/open/floor/iron/dark,
-/area/security/checkpoint/supply)
 "WC" = (
 /obj/effect/landmark/blobstart,
 /turf/open/floor/iron/white,
@@ -16102,10 +16146,6 @@
 /turf/open/floor/iron/white,
 /area/command/heads_quarters/rd)
 "Xm" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
-	},
-/obj/machinery/power/apc/auto_name/south,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/security/checkpoint/supply)
@@ -16254,11 +16294,9 @@
 /turf/open/floor/grass,
 /area/medical/virology)
 "XN" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/iron/dark,
-/area/security/checkpoint/supply)
+/obj/machinery/light/small/directional/south,
+/turf/open/floor/iron,
+/area/cargo/office)
 "XO" = (
 /turf/closed/wall,
 /area/security/prison/toilet)
@@ -16266,6 +16304,13 @@
 /obj/machinery/deepfryer,
 /turf/open/floor/iron/kitchen_coldroom/freezerfloor,
 /area/service/kitchen/coldroom)
+"XQ" = (
+/obj/machinery/door/airlock/mining{
+	name = "Drone Bay";
+	req_access_txt = "31"
+	},
+/turf/open/floor/iron,
+/area/cargo/warehouse)
 "XR" = (
 /obj/structure/table,
 /obj/item/crowbar/red,
@@ -16781,9 +16826,6 @@
 /turf/open/floor/carpet,
 /area/service/bar/atrium)
 "Zt" = (
-/obj/structure/closet/secure_closet/brig{
-	name = "holding cell locker"
-	},
 /turf/open/floor/iron/dark,
 /area/security/checkpoint/supply)
 "Zu" = (
@@ -51083,11 +51125,11 @@ rd
 mo
 Xw
 Xw
+Xw
 yp
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -51337,14 +51379,14 @@ rd
 PX
 PX
 OE
+Uw
 Yd
-XN
-mo
+fJ
+Xw
 Xw
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -51594,14 +51636,14 @@ Uw
 Uw
 Uw
 Uw
-DJ
+Uw
 Rw
 Zt
+rr
 Xw
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -51848,17 +51890,17 @@ yp
 Xw
 zc
 Uw
-Yd
-Yd
-Yd
-Yd
 KU
+Yd
+Yd
+xL
+Yd
 Xm
+xi
 Xw
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -52105,19 +52147,19 @@ yp
 Xw
 RZ
 Uw
+Uw
 Yd
 nJ
 nJ
 Yd
-Rw
-kE
+Zt
+OY
 Xw
 VI
 eR
 eR
 eR
 eR
-Mu
 Mu
 Mu
 Mu
@@ -52360,21 +52402,21 @@ eR
 yp
 eR
 Xw
-Yd
+mo
 no
 Yd
+Yd
 nJ
 nJ
 Yd
-Rw
-jF
+Zt
+gs
 Xw
 yp
 yp
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -52618,20 +52660,20 @@ FS
 FS
 eR
 dw
-wP
+dw
 uf
 Cf
 by
 UF
-Rw
-WB
+fH
+Zt
+Rc
 Xw
 yp
 yp
 yp
 yp
 eR
-Mu
 Mu
 Mu
 Mu
@@ -52875,9 +52917,9 @@ FS
 FS
 eR
 dw
-wP
-wP
-wP
+dw
+dw
+dw
 Kc
 WP
 WP
@@ -52888,7 +52930,7 @@ Xw
 yp
 yp
 eR
-Mu
+eR
 Mu
 Mu
 Mu
@@ -53391,7 +53433,7 @@ gm
 BV
 Uj
 dw
-dw
+XN
 Kc
 wb
 bt
@@ -53906,7 +53948,7 @@ WO
 Uj
 dw
 dw
-dw
+in
 bt
 bt
 zH
@@ -54674,10 +54716,10 @@ Zo
 BV
 BV
 BV
-BV
+wP
 dw
 dw
-FS
+DJ
 yp
 yp
 yp
@@ -55190,7 +55232,7 @@ eR
 eR
 eR
 dw
-dw
+XN
 gt
 Ay
 XK
@@ -55445,10 +55487,10 @@ yp
 yp
 yp
 yp
-FS
+DJ
 dw
 dw
-OK
+XQ
 OK
 OK
 OK
