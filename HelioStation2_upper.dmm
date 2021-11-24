@@ -2930,6 +2930,7 @@
 	icon_state = "titanium_blue"
 	},
 /obj/structure/fluff/tram_rail,
+/obj/effect/landmark/start/hangover,
 /turf/open/openspace,
 /area/hallway/primary/upper)
 "jc" = (
@@ -2942,7 +2943,10 @@
 /turf/open/floor/iron/white,
 /area/command/heads_quarters/rd)
 "je" = (
-/obj/structure/chair/stool/directional/east,
+/obj/structure/cable,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/security/prison)
 "jf" = (
@@ -3542,6 +3546,9 @@
 	network = list("ss13","prison")
 	},
 /obj/machinery/status_display/evac/directional/north,
+/obj/machinery/door/firedoor/border_only{
+	dir = 8
+	},
 /turf/open/floor/iron,
 /area/security/prison)
 "ld" = (
@@ -4451,9 +4458,18 @@
 /turf/open/floor/iron/dark,
 /area/command/teleporter)
 "nw" = (
-/obj/structure/chair/stool/directional/north,
-/turf/open/floor/iron,
-/area/security/prison)
+/obj/effect/turf_decal/tile{
+	color = "#FF6700";
+	dir = 1;
+	name = "Prison Orange"
+	},
+/obj/effect/turf_decal/tile{
+	color = "#FF6700";
+	name = "Prison Orange"
+	},
+/obj/machinery/holopad,
+/turf/open/floor/iron/cafeteria,
+/area/security/prison/upper)
 "nx" = (
 /obj/machinery/button/door/directional/west{
 	id = "permashut6";
@@ -9356,10 +9372,10 @@
 /turf/open/floor/iron,
 /area/security/prison)
 "Ch" = (
-/obj/structure/sign/painting/library_secure{
+/obj/machinery/light/directional/north,
+/obj/structure/sign/painting/library{
 	pixel_y = 32
 	},
-/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
 /area/security/prison)
 "Ci" = (
@@ -11949,11 +11965,11 @@
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hop)
 "Jr" = (
-/obj/structure/sign/painting/library_secure{
-	pixel_x = -32
-	},
 /obj/item/kirbyplants/random,
 /obj/machinery/light/directional/west,
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/iron,
 /area/security/prison)
 "Js" = (
@@ -13281,6 +13297,9 @@
 	name = "Prison Camera";
 	network = list("ss13","prison")
 	},
+/obj/structure/sign/painting/library{
+	pixel_x = -32
+	},
 /turf/open/floor/iron,
 /area/security/prison)
 "NC" = (
@@ -13787,9 +13806,14 @@
 /turf/open/floor/iron,
 /area/security/prison/safe)
 "Pe" = (
-/obj/structure/cable/multilayer/multiz,
 /obj/effect/turf_decal/stripes/end{
 	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/multiz/scrubbers/hidden/layer2{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/multiz/supply/hidden/layer4{
+	dir = 1
 	},
 /turf/open/floor/plating,
 /area/engineering/lobby)
@@ -14946,10 +14970,10 @@
 /area/science/xenobiology)
 "Sv" = (
 /obj/structure/table,
-/obj/structure/sign/painting/library_secure{
+/obj/machinery/light/directional/east,
+/obj/structure/sign/painting/library{
 	pixel_x = 32
 	},
-/obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/security/prison)
 "Sw" = (
@@ -16205,10 +16229,9 @@
 /turf/open/floor/wood,
 /area/service/bar)
 "Ww" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/item/kirbyplants/random,
+/obj/structure/closet/crate/solarpanel_small,
 /turf/open/floor/iron,
-/area/science/research/abandoned)
+/area/engineering/storage_shared)
 "Wx" = (
 /turf/open/floor/iron/dark,
 /area/science/server)
@@ -16692,18 +16715,13 @@
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "XZ" = (
-/obj/machinery/atmospherics/pipe/multiz/supply/hidden/layer4{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/multiz/scrubbers/hidden/layer2{
-	dir = 1
-	},
 /obj/structure/railing{
 	dir = 4
 	},
 /obj/effect/turf_decal/stripes/end{
 	dir = 4
 	},
+/obj/structure/cable/multilayer/multiz,
 /turf/open/floor/plating,
 /area/engineering/lobby)
 "Ya" = (
@@ -38063,7 +38081,7 @@ dd
 dd
 Sw
 dd
-dd
+Ww
 aD
 CR
 CR
@@ -42694,7 +42712,7 @@ og
 YP
 fv
 og
-PR
+bG
 Pe
 mJ
 cl
@@ -47485,7 +47503,7 @@ Rp
 VD
 el
 ZY
-JU
+eh
 zp
 Zj
 Zj
@@ -48770,7 +48788,7 @@ Zc
 JU
 Hw
 JU
-JU
+Na
 zv
 JU
 ff
@@ -49283,8 +49301,8 @@ SB
 Pc
 QL
 SB
-eh
-Sd
+JU
+Na
 JU
 JU
 JU
@@ -50828,7 +50846,7 @@ eh
 JU
 Na
 JU
-JU
+Na
 Ig
 EY
 yN
@@ -51083,9 +51101,9 @@ SB
 OT
 SB
 lc
-Na
-Na
-Na
+je
+je
+je
 Wm
 Wm
 ma
@@ -52631,7 +52649,7 @@ kv
 rk
 kv
 kv
-kv
+nw
 kv
 Yv
 HK
@@ -54676,7 +54694,7 @@ xW
 xW
 xW
 Zj
-JU
+Na
 JU
 wv
 wv
@@ -63739,7 +63757,7 @@ wF
 QV
 kR
 pA
-Ww
+Zv
 XE
 Ty
 Xs
@@ -65781,7 +65799,7 @@ Nq
 As
 Vo
 Vo
-XV
+Vo
 LD
 Hu
 Hu
@@ -66038,7 +66056,7 @@ CT
 As
 Vo
 Vo
-XV
+Vo
 LD
 Hu
 Hu
