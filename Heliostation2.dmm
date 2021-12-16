@@ -166,11 +166,9 @@
 /turf/open/floor/iron/dark,
 /area/security/processing)
 "aaP" = (
-/obj/structure/sign/warning/docking{
-	pixel_x = -30
-	},
-/turf/open/space/basic,
-/area/space)
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/security/brig)
 "aaQ" = (
 /obj/structure/sign/warning/docking{
 	pixel_y = -30
@@ -691,9 +689,10 @@
 	req_access_txt = "2";
 	safety_mode = 1
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "brig-pods"
 	},
+/obj/structure/cable,
 /turf/open/space/basic,
 /area/security/brig)
 "adV" = (
@@ -1110,6 +1109,7 @@
 /obj/structure/sign/warning/pods{
 	pixel_y = 30
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/brig)
 "ahs" = (
@@ -1133,10 +1133,12 @@
 /turf/open/floor/plating,
 /area/science/robotics/mechbay)
 "ahu" = (
-/obj/machinery/power/apc/auto_name/directional/south,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/security/brig)
 "ahw" = (
 /obj/effect/turf_decal/tile/red{
 	color = "#FF0000";
@@ -1169,7 +1171,9 @@
 	req_access_txt = "2";
 	safety_mode = 1
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "brig-pods"
+	},
 /turf/open/floor/plating,
 /area/security/brig)
 "ahS" = (
@@ -1181,9 +1185,10 @@
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
 "ahT" = (
+/obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/fore)
 "ahU" = (
 /obj/structure/table_frame,
 /obj/item/shard,
@@ -1238,6 +1243,7 @@
 /area/hallway/primary/fore)
 "aiV" = (
 /obj/machinery/light/small/directional/east,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/security/brig)
 "aiW" = (
@@ -1472,8 +1478,8 @@
 	name = "Security External Airlock";
 	req_access_txt = "63"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "brig-pods"
 	},
 /turf/open/floor/plating,
 /area/security/brig)
@@ -1508,10 +1514,10 @@
 	name = "Security External Airlock";
 	req_access_txt = "63"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "brig-pods"
+	},
 /turf/open/floor/plating,
 /area/security/brig)
 "akT" = (
@@ -2312,10 +2318,10 @@
 /turf/open/floor/plating,
 /area/maintenance/department/security)
 "aqT" = (
-/obj/structure/closet/emcloset,
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
+/obj/effect/landmark/start/hangover,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/hallway/primary/fore)
 "aqU" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
@@ -2338,8 +2344,10 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "aqZ" = (
-/turf/open/space/basic,
-/area/ai_monitored/command/storage/eva)
+/obj/structure/closet/emcloset,
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "ari" = (
 /obj/structure/cable,
 /obj/effect/turf_decal/stripes/corner{
@@ -4015,13 +4023,6 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/maintenance/port)
-"aEJ" = (
-/obj/structure/chair{
-	dir = 8
-	},
-/obj/effect/landmark/start/hangover,
-/turf/open/floor/iron,
-/area/hallway/secondary/command)
 "aEO" = (
 /obj/item/kirbyplants/random,
 /turf/open/floor/wood,
@@ -4151,12 +4152,6 @@
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/iron/dark,
 /area/security/interrogation)
-"aFM" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/command)
 "aFP" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -4231,6 +4226,10 @@
 "aGu" = (
 /obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/stripes/corner,
+/obj/machinery/camera/directional/south{
+	c_tag = "Starboard Primary Hallway - Customs";
+	name = "Hallway Camera"
+	},
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "aGw" = (
@@ -4562,6 +4561,7 @@
 	dir = 4;
 	name = "Security red corner"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/courtroom)
 "aHT" = (
@@ -4805,13 +4805,13 @@
 /turf/open/floor/iron,
 /area/maintenance/starboard)
 "aJG" = (
-/obj/structure/chair{
-	dir = 4;
-	name = "Prosecution"
+/obj/structure/table_frame,
+/obj/item/shard{
+	icon_state = "medium"
 	},
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/security/courtroom)
+/obj/effect/spawner/random/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "aJH" = (
 /obj/structure/fluff/broken_flooring{
 	dir = 1
@@ -4981,15 +4981,7 @@
 /turf/open/floor/iron,
 /area/security/courtroom)
 "aLg" = (
-/obj/structure/table,
-/obj/item/reagent_containers/food/drinks/mug/tea{
-	pixel_x = 4;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/food/drinks/mug/tea{
-	pixel_x = -7;
-	pixel_y = 8
-	},
+/obj/structure/stairs/south,
 /turf/open/floor/iron,
 /area/hallway/secondary/command)
 "aLh" = (
@@ -5072,7 +5064,12 @@
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
 "aLW" = (
-/turf/open/space/basic,
+/obj/machinery/door/airlock/external{
+	name = "External Airlock";
+	req_access_txt = "24"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/turf/open/floor/plating,
 /area/maintenance/starboard)
 "aLX" = (
 /obj/structure/table,
@@ -5275,12 +5272,18 @@
 	name = "External Airlock";
 	req_access_txt = "24"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "aNy" = (
-/turf/closed/wall/r_wall,
-/area/space)
+/obj/machinery/door/poddoor/preopen{
+	id = "law1";
+	name = "Purple Office Privacy Door"
+	},
+/turf/open/floor/plating,
+/area/service/lawoffice)
 "aNA" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window/reinforced,
@@ -5457,7 +5460,6 @@
 /turf/open/floor/iron/kitchen_coldroom,
 /area/medical/coldroom)
 "aOz" = (
-/obj/machinery/vending/drugs,
 /obj/effect/turf_decal/tile/blue{
 	color = "#4169E1";
 	dir = 4;
@@ -5501,8 +5503,19 @@
 /turf/open/floor/iron,
 /area/maintenance/starboard)
 "aOI" = (
-/turf/open/space/basic,
-/area/maintenance/port)
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 4;
+	name = "Command blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	dir = 1;
+	name = "Medical blue corner"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/white,
+/area/medical/medbay/central)
 "aOJ" = (
 /obj/structure/lattice,
 /turf/closed/wall,
@@ -5694,6 +5707,7 @@
 	dir = 8;
 	name = "Command blue corner"
 	},
+/obj/machinery/vending/drugs,
 /turf/open/floor/iron/white,
 /area/medical/cryo)
 "aPq" = (
@@ -6145,7 +6159,6 @@
 /area/service/lawoffice)
 "aSr" = (
 /obj/machinery/light/directional/west,
-/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/courtroom)
 "aSs" = (
@@ -6298,7 +6311,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/iron,
-/area/space)
+/area/maintenance/solars/port/fore)
 "aTd" = (
 /obj/structure/table/wood,
 /obj/item/pen,
@@ -8080,12 +8093,6 @@
 /area/medical/pharmacy)
 "bdy" = (
 /obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/starboard";
-	name = "Starboard Primary Hallway APC";
-	pixel_y = -23
-	},
-/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bdz" = (
@@ -8764,15 +8771,10 @@
 /turf/closed/wall/r_wall,
 /area/medical/medbay/lobby)
 "bhY" = (
-/obj/machinery/door/airlock/external{
-	name = "External Airlock";
-	req_access_txt = "24"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 1
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard)
+/obj/structure/cable,
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/white,
+/area/medical/medbay/central)
 "bie" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/plating,
@@ -8808,12 +8810,21 @@
 /turf/open/floor/iron,
 /area/commons/lounge)
 "bio" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Maintenance Access";
-	req_access_txt = "12"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 1
 	},
-/turf/open/floor/plating,
-/area/maintenance/port)
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 8;
+	name = "Command blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	name = "Medical blue corner"
+	},
+/obj/machinery/door/firedoor,
+/turf/open/floor/iron/white,
+/area/medical/medbay/central)
 "bip" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass,
@@ -8988,8 +8999,7 @@
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
 "bjv" = (
-/obj/effect/spawner/random/maintenance,
-/obj/structure/cable,
+/obj/effect/landmark/blobstart,
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bjw" = (
@@ -9243,23 +9253,25 @@
 /area/medical/pharmacy)
 "bkL" = (
 /obj/structure/filingcabinet/filingcabinet,
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
-"bkM" = (
-/obj/structure/filingcabinet/filingcabinet,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
-"bkN" = (
-/obj/structure/filingcabinet/filingcabinet,
+"bkM" = (
 /obj/structure/sign/poster/official/random{
 	pixel_y = 30
 	},
+/obj/item/kirbyplants/random,
+/turf/open/floor/iron,
+/area/security/checkpoint/customs)
+"bkN" = (
+/obj/structure/table,
+/obj/item/flashlight/lamp/green,
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "bkO" = (
-/obj/structure/table,
-/obj/item/flashlight/lamp/green,
+/obj/structure/closet/secure_closet/contraband/heads,
+/obj/item/storage/secure/briefcase,
+/obj/effect/spawner/random/maintenance/eight,
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "bkQ" = (
@@ -9271,11 +9283,11 @@
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen)
 "blc" = (
-/obj/structure/closet/secure_closet/contraband/heads,
-/obj/item/storage/secure/briefcase,
-/obj/effect/spawner/random/maintenance/eight,
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
+/obj/structure/closet/crate,
+/obj/effect/spawner/random/maintenance/two,
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/maintenance/starboard)
 "bld" = (
 /obj/docking_port/stationary/public_mining_dock,
 /turf/open/floor/plating,
@@ -9525,18 +9537,23 @@
 	name = "Customs Maintenance";
 	req_access_txt = "19"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/starboard)
 "bmj" = (
+/obj/structure/chair/comfy/brown,
+/obj/structure/cable,
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
 "bmk" = (
-/obj/structure/chair/comfy/brown,
+/obj/structure/cable,
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
 "bmm" = (
-/turf/closed/wall/r_wall,
-/area/hallway/secondary/exit)
+/obj/machinery/light/directional/east,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/security/checkpoint/customs)
 "bmr" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -9587,9 +9604,12 @@
 /turf/open/floor/iron/chapel,
 /area/service/chapel)
 "bmy" = (
-/obj/effect/landmark/blobstart,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
+/obj/structure/chair/comfy/brown{
+	buildstackamount = 0;
+	dir = 1
+	},
+/turf/open/floor/carpet/royalblack,
+/area/security/checkpoint/customs)
 "bmA" = (
 /obj/structure/stairs/north,
 /turf/open/floor/iron/white,
@@ -9599,8 +9619,20 @@
 /turf/open/floor/iron/white,
 /area/commons/toilet)
 "bmD" = (
-/obj/machinery/light/directional/east,
-/turf/open/floor/carpet/royalblack,
+/obj/machinery/door/airlock/command/glass{
+	name = "Customs Desk";
+	req_access_txt = "19"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 1;
+	name = "Command blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	name = "Command blue corner"
+	},
+/turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "bmF" = (
 /obj/structure/closet/radiation,
@@ -9761,20 +9793,10 @@
 /turf/open/floor/iron/white,
 /area/medical/pharmacy)
 "bnw" = (
-/obj/structure/extinguisher_cabinet/directional/west,
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
-"bnx" = (
-/obj/structure/chair/comfy/brown{
-	dir = 4
-	},
-/turf/open/floor/carpet/royalblack,
-/area/security/checkpoint/customs)
-"bny" = (
 /obj/structure/table/wood,
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
-"bnz" = (
+"bnx" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/cognac,
 /obj/item/reagent_containers/food/drinks/drinkingglass,
@@ -9782,39 +9804,59 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass,
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
-"bnB" = (
-/obj/structure/table,
-/obj/item/storage/firstaid/regular,
+"bnz" = (
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/security/checkpoint/customs)
+"bnB" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/hallway/primary/starboard)
 "bnC" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
 /area/security/courtroom)
 "bnD" = (
-/obj/structure/chair,
-/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 1;
+	name = "Command blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 4;
+	name = "Command blue corner"
+	},
+/obj/machinery/newscaster/directional/north,
+/obj/item/kirbyplants/random,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/starboard)
 "bnE" = (
-/obj/structure/table,
-/obj/item/storage/toolbox/emergency,
-/obj/machinery/light/small/directional/north,
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 1;
+	name = "Command blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	dir = 4;
+	name = "Command blue corner"
+	},
+/obj/machinery/light/directional/north,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/starboard)
 "bnF" = (
-/obj/structure/chair,
-/obj/structure/sign/poster/official/random{
-	pixel_y = 30
-	},
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/secondary/entry)
 "bnJ" = (
-/obj/structure/chair/comfy/brown{
-	dir = 8
-	},
-/turf/open/floor/carpet/royalblack,
-/area/security/checkpoint/customs)
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass,
+/obj/structure/cable,
+/turf/open/floor/iron,
+/area/hallway/primary/port)
 "bnK" = (
 /obj/structure/closet/toolcloset,
 /obj/machinery/light/directional/west,
@@ -9841,9 +9883,10 @@
 /turf/open/floor/iron,
 /area/construction/mining/aux_base)
 "bnQ" = (
-/obj/structure/chair,
+/obj/effect/landmark/event_spawn,
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/port)
 "bnR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
@@ -9975,34 +10018,40 @@
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "boP" = (
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
-"boQ" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/cigarettes/cigars/havana,
 /obj/item/lighter,
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
+"boQ" = (
+/obj/structure/chair/comfy/brown{
+	dir = 8
+	},
+/turf/open/floor/carpet/royalblack,
+/area/security/checkpoint/customs)
 "boS" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/obj/machinery/door/firedoor,
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/port)
 "boU" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-/area/hallway/secondary/exit)
-"boW" = (
-/obj/machinery/camera/directional/east{
-	c_tag = "Secure EVAC";
-	name = "Hallway Camera";
-	network = list("ss13","security")
+/obj/effect/turf_decal/tile/red{
+	color = "#FF0000";
+	dir = 8;
+	name = "Security red corner"
 	},
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = 30
+/obj/effect/turf_decal/tile/red{
+	color = "#FF0000";
+	name = "Security red corner"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/port)
+"boW" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/south,
+/turf/open/floor/iron,
+/area/hallway/primary/central)
 "bph" = (
 /obj/machinery/atmospherics/pipe/multiz/supply/hidden/layer4{
 	dir = 1
@@ -10201,6 +10250,7 @@
 /area/security/checkpoint/customs)
 "bqa" = (
 /obj/machinery/holopad,
+/obj/effect/landmark/event_spawn,
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "bqb" = (
@@ -10210,56 +10260,27 @@
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
 "bqd" = (
-/obj/structure/chair/comfy/brown{
-	buildstackamount = 0;
-	dir = 1
-	},
 /turf/open/floor/carpet/royalblack,
 /area/security/checkpoint/customs)
 "bqe" = (
-/obj/structure/chair{
+/obj/machinery/door/airlock/external{
+	name = "External Airlock";
+	req_access_txt = "13"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "bqh" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Command EVAC";
-	req_access_txt = "19"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bqj" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bql" = (
-/obj/machinery/door/airlock/external{
-	name = "Security Escape Airlock";
-	req_one_access_txt = "63;19";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+/obj/structure/cable,
+/obj/effect/turf_decal/tile/brown,
+/obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bqn" = (
-/obj/machinery/door/airlock/external{
-	name = "Security Escape Airlock";
-	req_one_access_txt = "63;19";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/hallway/primary/aft)
 "bqo" = (
 /obj/structure/stairs/west,
 /turf/open/floor/iron/white,
@@ -10591,30 +10612,6 @@
 "brM" = (
 /turf/open/floor/iron,
 /area/security/checkpoint/customs)
-"brO" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Command EVAC";
-	req_access_txt = "19"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	name = "Command blue corner"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"brP" = (
-/obj/machinery/door/airlock/security/glass{
-	id_tag = null;
-	name = "Security EVAC";
-	req_access_txt = "63"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "brT" = (
 /obj/machinery/light/directional/south,
 /obj/structure/cable/multilayer/multiz,
@@ -10643,10 +10640,6 @@
 /obj/machinery/vending/assist,
 /turf/open/floor/iron,
 /area/commons/storage/tools)
-"brW" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
 "brX" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -10738,53 +10731,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/security/checkpoint/customs)
-"bsm" = (
-/obj/machinery/door/airlock/command/glass{
-	name = "Customs Desk";
-	req_access_txt = "19"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	name = "Command blue corner"
-	},
-/turf/open/floor/iron,
-/area/security/checkpoint/customs)
-"bsn" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 4;
-	name = "Command blue corner"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bsp" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/status_display/ai/directional/north,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bss" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bst" = (
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bsv" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Maintenance Access";
@@ -10990,7 +10936,7 @@
 	dir = 4;
 	name = "Command blue corner"
 	},
-/obj/machinery/light/directional/north,
+/obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "btE" = (
@@ -11001,16 +10947,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/central)
-"btF" = (
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"btH" = (
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = 30
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "btI" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Courtroom"
@@ -11103,28 +11039,6 @@
 /obj/effect/spawner/structure/window,
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
-"buk" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 4;
-	name = "Command blue corner"
-	},
-/obj/machinery/firealarm/directional/north,
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
-"bul" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=lblue";
-	location = "customs";
-	name = "Patrol Beacon"
-	},
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
 "bum" = (
 /obj/structure/table,
 /obj/machinery/microwave,
@@ -11136,6 +11050,7 @@
 	location = "arrivals";
 	name = "Patrol Beacon"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/hallway/primary/port)
 "but" = (
@@ -11221,16 +11136,6 @@
 	},
 /turf/closed/wall/r_wall,
 /area/science/mixing)
-"bvh" = (
-/obj/structure/closet/firecloset,
-/obj/machinery/camera/directional/east{
-	c_tag = "EVAC NE";
-	name = "Hallway Camera"
-	},
-/obj/machinery/light/directional/east,
-/obj/machinery/status_display/evac/directional/east,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bvi" = (
 /obj/structure/table,
 /obj/effect/spawner/random/food_or_drink/donkpockets,
@@ -11308,14 +11213,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/security/checkpoint/medical)
-"bvy" = (
-/obj/effect/landmark/event_spawn,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bvA" = (
-/obj/item/kirbyplants/random,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bvB" = (
 /obj/structure/table,
 /obj/item/book/manual/wiki/security_space_law,
@@ -11327,14 +11224,6 @@
 /obj/item/storage/fancy/donut_box,
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
-"bvI" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=evac";
-	location = "research";
-	name = "Patrol Beacon"
-	},
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
 "bvN" = (
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/iron,
@@ -11408,12 +11297,6 @@
 /obj/effect/turf_decal/tile/green,
 /turf/open/floor/iron,
 /area/hallway/primary/port)
-"bwa" = (
-/obj/structure/closet/emcloset,
-/obj/machinery/light/directional/east,
-/obj/machinery/status_display/evac/directional/east,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bwc" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/status_display/evac/directional/south,
@@ -11565,29 +11448,11 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
-"bwD" = (
-/obj/machinery/camera/directional/south{
-	c_tag = "Starboard Primary Hallway - Customs";
-	name = "Hallway Camera"
-	},
-/obj/machinery/firealarm/directional/south,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
 "bwE" = (
 /obj/structure/chair/office,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/iron,
 /area/hallway/primary/port)
-"bwH" = (
-/obj/structure/closet/emcloset,
-/obj/structure/sign/warning/vacuum/external{
-	pixel_x = 30
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bwI" = (
 /obj/structure/chair{
 	dir = 1
@@ -11637,6 +11502,7 @@
 	color = "#FF0000";
 	name = "Security red corner"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "bwQ" = (
@@ -11908,24 +11774,11 @@
 	dir = 1
 	},
 /area/service/hydroponics)
-"bxD" = (
-/turf/closed/wall,
-/area/hallway/primary/starboard)
 "bxE" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/status_display/evac/directional/west,
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
-"bxF" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bxI" = (
 /obj/structure/table/reinforced,
 /obj/machinery/cell_charger,
@@ -12044,6 +11897,7 @@
 /area/security/checkpoint)
 "bxX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "bxY" = (
@@ -12302,13 +12156,6 @@
 /turf/open/floor/iron,
 /area/hallway/primary/central)
 "byI" = (
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/central";
-	dir = 1;
-	name = "Central Primary Hallway APC";
-	pixel_y = 25
-	},
-/obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 1
 	},
@@ -12320,7 +12167,6 @@
 /obj/machinery/door/airlock{
 	name = "Emergency Storage"
 	},
-/obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating{
 	dir = 1
 	},
@@ -12546,6 +12392,8 @@
 /area/medical/medbay/central)
 "bzp" = (
 /obj/structure/chair/stool,
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/hallway/primary/port)
 "bzq" = (
@@ -12555,10 +12403,6 @@
 	},
 /obj/structure/closet/emcloset,
 /obj/effect/landmark/start/hangover/closet,
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
-"bzr" = (
-/obj/machinery/vending/coffee,
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "bzt" = (
@@ -12598,9 +12442,7 @@
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
 "bzy" = (
-/obj/effect/spawner/random/vending/snackvend,
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron,
+/turf/closed/wall/r_wall,
 /area/hallway/primary/starboard)
 "bzz" = (
 /obj/machinery/navbeacon/wayfinding,
@@ -12619,16 +12461,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/science)
-"bzB" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/structure/sign/departments/evac{
-	pixel_x = -30
-	},
-/obj/machinery/light/directional/west,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bzG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -12637,10 +12469,6 @@
 	},
 /turf/open/floor/plating,
 /area/science/lab)
-"bzH" = (
-/obj/effect/spawner/random/vending/colavend,
-/turf/open/floor/iron,
-/area/hallway/primary/starboard)
 "bzI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
@@ -12671,6 +12499,7 @@
 /area/security/checkpoint)
 "bzP" = (
 /obj/machinery/holopad,
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "bzR" = (
@@ -13043,22 +12872,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
-"bBh" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/effect/landmark/start/assistant,
-/obj/structure/extinguisher_cabinet/directional/west,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bBi" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=customs";
-	location = "evac";
-	name = "Patrol Beacon"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bBl" = (
 /obj/machinery/door/poddoor/preopen{
 	id = "researchlock";
@@ -13564,25 +13377,16 @@
 	},
 /turf/open/floor/iron/white,
 /area/science/lab)
-"bCN" = (
-/obj/structure/chair{
-	dir = 4
-	},
-/obj/machinery/newscaster/directional/west,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bCO" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 1
+/obj/machinery/door/airlock/external{
+	name = "External Airlock";
+	req_access_txt = "13"
 	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"bCP" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 1
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
 	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "bCR" = (
 /obj/machinery/navbeacon{
 	codes_txt = "delivery;dir=8";
@@ -13724,6 +13528,7 @@
 	name = "Security Maintenance";
 	req_access_txt = "2"
 	},
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/port/aft)
 "bDo" = (
@@ -14082,13 +13887,8 @@
 	dir = 8
 	},
 /obj/machinery/newscaster/directional/south,
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/secondary/entry";
-	dir = 4;
-	name = "Entry Hall APC";
-	pixel_x = 24
-	},
 /obj/structure/cable,
+/obj/machinery/power/apc/auto_name/directional/east,
 /turf/open/floor/carpet,
 /area/hallway/secondary/entry)
 "bEL" = (
@@ -14534,11 +14334,6 @@
 /obj/structure/chair/stool/bar/directional/west,
 /turf/open/floor/carpet,
 /area/service/bar/atrium)
-"bGC" = (
-/obj/machinery/disposal/bin,
-/obj/machinery/status_display/evac/directional/west,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bGD" = (
 /obj/structure/table/reinforced,
 /obj/machinery/door/poddoor/shutters{
@@ -14798,10 +14593,6 @@
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/carpet,
 /area/service/lawoffice)
-"bHT" = (
-/obj/machinery/light/directional/south,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bHU" = (
 /obj/machinery/photocopier,
 /obj/machinery/firealarm/directional/south,
@@ -15323,12 +15114,12 @@
 /turf/open/floor/wood,
 /area/hallway/secondary/service)
 "bKn" = (
-/obj/machinery/door/airlock/security{
+/obj/machinery/door/firedoor,
+/obj/structure/cable,
+/obj/machinery/door/airlock{
 	name = "Detective's Office";
 	req_access_txt = "4"
 	},
-/obj/machinery/door/firedoor,
-/obj/structure/cable,
 /turf/open/floor/wood,
 /area/security/detectives_office)
 "bKo" = (
@@ -15888,19 +15679,6 @@
 /obj/machinery/atmospherics/components/binary/valve,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
-"bOn" = (
-/obj/effect/turf_decal/tile/red{
-	color = "#FF0000";
-	dir = 4;
-	name = "Security red corner"
-	},
-/obj/effect/turf_decal/tile/red{
-	color = "#FF0000";
-	dir = 1;
-	name = "Security red corner"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bOr" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -15985,17 +15763,6 @@
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
-"bPu" = (
-/obj/machinery/power/apc{
-	areastring = "/area/hallway/primary/aft";
-	dir = 8;
-	name = "Aft Hall APC";
-	pixel_x = -25;
-	pixel_y = 1
-	},
-/obj/structure/cable,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
 "bPv" = (
 /obj/machinery/door/airlock{
 	name = "Service Hall";
@@ -16076,17 +15843,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
-"bQo" = (
-/obj/docking_port/stationary{
-	dir = 4;
-	dwidth = 12;
-	height = 18;
-	id = "emergency_home";
-	name = "BoxStation emergency evac bay";
-	width = 32
-	},
-/turf/open/space/basic,
-/area/space)
 "bQp" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Law Reception"
@@ -16823,10 +16579,6 @@
 "bVN" = (
 /turf/closed/wall/r_wall,
 /area/science/mixing)
-"bVQ" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "bVR" = (
 /obj/structure/railing{
 	dir = 8
@@ -16846,9 +16598,6 @@
 	},
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
-"bVT" = (
-/turf/closed/wall,
-/area/hallway/secondary/exit)
 "bVW" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -16922,16 +16671,6 @@
 /obj/effect/turf_decal/trimline/blue/line,
 /turf/open/floor/iron/dark,
 /area/engineering/gravity_generator)
-"bWN" = (
-/obj/machinery/door/airlock/external{
-	name = "External Airlock";
-	req_access_txt = "13"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
 "bWS" = (
 /obj/structure/table/glass,
 /obj/item/radio/headset/headset_medsci,
@@ -16956,16 +16695,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
-"bXc" = (
-/obj/machinery/door/airlock/external{
-	name = "External Airlock";
-	req_access_txt = "13"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
 "bXe" = (
 /obj/structure/rack,
 /obj/item/multitool/circuit{
@@ -17149,14 +16878,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/tcommsat/computer)
-"bYB" = (
-/obj/structure/table_frame,
-/obj/item/shard{
-	icon_state = "medium"
-	},
-/obj/effect/spawner/random/maintenance,
-/turf/open/floor/plating,
-/area/maintenance/starboard)
 "bYC" = (
 /obj/machinery/telecomms/bus/preset_two,
 /turf/open/floor/circuit/telecomms/mainframe,
@@ -18054,20 +17775,6 @@
 	},
 /turf/open/floor/iron,
 /area/cargo/warehouse)
-"cek" = (
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 1;
-	name = "Command blue corner"
-	},
-/obj/effect/turf_decal/tile/blue{
-	color = "#4169E1";
-	dir = 4;
-	name = "Command blue corner"
-	},
-/obj/machinery/bluespace_vendor/directional/west,
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "cep" = (
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plating,
@@ -23615,18 +23322,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos)
-"cGG" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 8
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
-"cGH" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "cGS" = (
 /turf/open/floor/iron/dark,
 /area/medical/medbay/lobby)
@@ -24427,19 +24122,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
-"cVT" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/navbeacon/wayfinding{
-	location = "Arrival Shuttle"
-	},
-/turf/open/floor/iron,
-/area/hallway/secondary/exit)
 "cVW" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -25881,7 +25563,6 @@
 /turf/open/floor/iron,
 /area/hallway/primary/starboard)
 "giJ" = (
-/obj/machinery/vending/medical,
 /obj/effect/turf_decal/tile/blue{
 	color = "#73c2fb";
 	dir = 1;
@@ -25896,6 +25577,7 @@
 	color = "#73c2fb";
 	name = "Medical blue corner"
 	},
+/obj/item/kirbyplants/random,
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "gjU" = (
@@ -26082,7 +25764,7 @@
 /turf/open/floor/grass,
 /area/service/hydroponics/garden)
 "gSf" = (
-/obj/machinery/door/airlock/security{
+/obj/machinery/door/airlock{
 	name = "Detective's Morgue";
 	req_access_txt = "4"
 	},
@@ -27286,7 +26968,6 @@
 /turf/open/floor/iron/white,
 /area/medical/medbay/central)
 "kaW" = (
-/obj/structure/cable,
 /obj/effect/turf_decal/siding/wideplating/corner{
 	dir = 1
 	},
@@ -27921,6 +27602,7 @@
 /turf/open/floor/iron,
 /area/security/brig)
 "mcO" = (
+/obj/structure/cable,
 /turf/open/floor/iron,
 /area/security/checkpoint)
 "mdq" = (
@@ -29321,11 +29003,11 @@
 /turf/open/floor/iron,
 /area/hallway/primary/aft)
 "qJN" = (
-/obj/machinery/door/airlock/security{
+/obj/machinery/door/firedoor,
+/obj/machinery/door/airlock{
 	name = "Detective's Office";
 	req_access_txt = "4"
 	},
-/obj/machinery/door/firedoor,
 /turf/open/floor/wood,
 /area/security/detectives_office)
 "qKl" = (
@@ -29905,6 +29587,7 @@
 	dir = 8;
 	name = "Command blue corner"
 	},
+/obj/machinery/vending/medical,
 /turf/open/floor/iron/white,
 /area/medical/cryo)
 "sxx" = (
@@ -30272,12 +29955,12 @@
 /turf/open/floor/plating/airless,
 /area/space/nearstation)
 "tHS" = (
-/obj/machinery/door/airlock/security{
+/obj/structure/cable,
+/obj/machinery/door/airlock{
 	name = "Private Interrogation";
 	req_access_txt = "4"
 	},
-/obj/structure/cable,
-/turf/open/floor/wood,
+/turf/open/floor/iron/dark,
 /area/security/detectives_office/private_investigators_office)
 "tIB" = (
 /obj/effect/turf_decal/tile/brown{
@@ -46987,8 +46670,8 @@ bLw
 bLw
 bLw
 lvj
-qTU
-qTU
+oFl
+oFl
 bEK
 bwU
 bwU
@@ -47241,10 +46924,10 @@ bLw
 bLw
 bLw
 bLw
-bLw
-bLw
-qTU
-qTU
+bnF
+bnF
+oFl
+oFl
 bDc
 bwU
 bwU
@@ -47496,9 +47179,9 @@ bLw
 bLw
 bLw
 bLw
-bLw
-bLw
-bLw
+bnF
+bnF
+bnF
 qTU
 bzX
 bBD
@@ -47752,8 +47435,8 @@ qTU
 bLw
 bLw
 bLw
-bLw
-bLw
+bnF
+bnF
 bLw
 bLw
 qTU
@@ -48009,7 +47692,7 @@ bqz
 bLw
 bLw
 bLw
-bLw
+bnF
 bLw
 bLw
 bLw
@@ -48248,10 +47931,10 @@ aaa
 aaa
 aaa
 aaa
-aNy
-aNy
+aaa
 bdS
-bmV
+bdS
+kId
 kId
 kId
 bmV
@@ -48266,7 +47949,7 @@ bmV
 brZ
 bLw
 bLw
-bLw
+bnF
 bLw
 bLw
 lUY
@@ -48503,12 +48186,12 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
+aaa
+aaa
+bdS
 bdS
 aGQ
 kId
-bmV
 kId
 kId
 kId
@@ -48523,7 +48206,7 @@ bmV
 bmV
 bsB
 aLY
-aLY
+bnJ
 aLY
 bsB
 bwU
@@ -48760,12 +48443,12 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
+aaa
+aaa
 bdS
 tsg
 tsg
-aSh
+tsg
 tsg
 tsg
 tsg
@@ -48778,8 +48461,8 @@ tsg
 tsg
 tsg
 bqY
-bsI
-bsI
+bvV
+bvV
 bur
 bsI
 hEg
@@ -49017,11 +48700,11 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
+aaa
+aaa
 bdS
 bdS
-tsg
+els
 bmV
 kId
 kId
@@ -49037,7 +48720,7 @@ bmV
 bmV
 bsI
 bsI
-bsI
+bvV
 bsI
 bsI
 bwM
@@ -49274,9 +48957,9 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
-aOI
+aaa
+aaa
+aaa
 bdS
 tsg
 bmV
@@ -49294,7 +48977,7 @@ bqr
 aZp
 bsE
 bsI
-bsI
+bvV
 bsI
 bvS
 bwM
@@ -49531,9 +49214,9 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
-aOI
+aaa
+aaa
+aaa
 bdS
 tsg
 bmV
@@ -49551,7 +49234,7 @@ bpk
 brU
 pHZ
 bsI
-bsI
+bvV
 bsI
 bsI
 bwM
@@ -49788,9 +49471,9 @@ aaa
 aaa
 aaa
 aaa
-aOI
-aOI
-aOI
+aaa
+aaa
+aaa
 bdS
 tsg
 bmV
@@ -49808,7 +49491,7 @@ bpk
 brU
 pHZ
 bsI
-aMc
+bnQ
 bsI
 bsI
 bwM
@@ -49819,7 +49502,7 @@ bwM
 bwM
 bwU
 bwU
-bEL
+bGh
 bwU
 bEL
 bEL
@@ -50065,7 +49748,7 @@ bqt
 aZp
 pHZ
 bsI
-bsI
+bvV
 bsI
 wPq
 bwM
@@ -50076,7 +49759,7 @@ bCY
 bEG
 bGd
 bEL
-bEL
+bGh
 bwU
 bwU
 bEL
@@ -50322,7 +50005,7 @@ bpk
 bsa
 pHZ
 bsI
-bsI
+bvV
 bsI
 wPq
 bwN
@@ -50333,7 +50016,7 @@ bCZ
 bEH
 bwU
 bHp
-bEL
+bGh
 bwU
 pyc
 pyc
@@ -50579,7 +50262,7 @@ bqv
 aZp
 pHZ
 btX
-bsI
+bvV
 aUO
 wPq
 bwM
@@ -50590,7 +50273,7 @@ bzJ
 bEI
 bwU
 bHq
-bEL
+bGh
 bwU
 pyc
 pyc
@@ -50836,7 +50519,7 @@ bqw
 aZp
 bsH
 bsI
-bsI
+bvV
 bsI
 bsI
 bwM
@@ -50847,7 +50530,7 @@ bwM
 bwM
 bwU
 bwU
-bEL
+bGh
 bwU
 pyc
 pyc
@@ -51093,7 +50776,7 @@ bqx
 aZp
 bsI
 bsI
-bsI
+bvV
 bsI
 bsI
 bwM
@@ -51104,7 +50787,7 @@ bDb
 bzJ
 bGc
 bwU
-bEL
+bGh
 bwU
 pyc
 pyc
@@ -51350,7 +51033,7 @@ bqA
 aZp
 bsJ
 bsI
-bsI
+bvV
 bsI
 bvN
 bwM
@@ -51361,7 +51044,7 @@ bzJ
 bzJ
 bzK
 bwU
-bEL
+bGh
 bwU
 bwU
 bwU
@@ -51607,7 +51290,7 @@ bmV
 bmV
 bsS
 bsI
-bsI
+bvV
 bsI
 bvO
 bwM
@@ -51618,7 +51301,7 @@ bDl
 bEJ
 bGe
 bwU
-bEL
+bGh
 bwU
 bEL
 bEL
@@ -51860,11 +51543,11 @@ tsg
 tsg
 tsg
 bpB
-kId
-bio
-bsI
-bsI
-bsI
+tsg
+bqY
+bvV
+bvV
+bvV
 bsI
 cXw
 bwM
@@ -51875,7 +51558,7 @@ bDm
 bFc
 bzJ
 bwU
-bEL
+bGh
 bwU
 bEL
 bEL
@@ -52121,7 +51804,7 @@ gnW
 bmV
 bsM
 bsI
-bsI
+bvV
 bsI
 cXx
 bwO
@@ -52132,7 +51815,7 @@ bwU
 bwU
 bwU
 bwU
-chD
+ceW
 bwU
 chD
 bwU
@@ -52378,7 +52061,7 @@ bmV
 bmV
 cXr
 bsI
-bsI
+bvV
 bsI
 lWR
 bwO
@@ -52389,7 +52072,7 @@ bwU
 ceN
 bGf
 bGh
-bEL
+bGh
 bwU
 bEL
 bEL
@@ -52635,9 +52318,9 @@ bnS
 aXj
 aHf
 bsI
-bsI
-bsI
-lWR
+bvV
+bvV
+boU
 bwP
 bxX
 mcO
@@ -52892,7 +52575,7 @@ boa
 brX
 bsI
 bsI
-bsI
+bvV
 bsI
 bvQ
 bwQ
@@ -53149,7 +52832,7 @@ bfK
 brX
 bsI
 bsI
-bsI
+bvV
 bsI
 lWR
 bwR
@@ -53406,7 +53089,7 @@ bfK
 brX
 bsD
 bsD
-bsD
+boS
 bsD
 mjr
 bwQ
@@ -53663,7 +53346,7 @@ bnS
 brX
 bsN
 bsI
-bsI
+bvV
 bsI
 bvS
 bwO
@@ -53920,7 +53603,7 @@ bnT
 brY
 cpG
 bsI
-bsI
+bvV
 bsI
 bsI
 bwO
@@ -54177,7 +53860,7 @@ juV
 bsc
 cpG
 bsI
-bsI
+bvV
 bsI
 bsI
 bwS
@@ -54434,7 +54117,7 @@ bnZ
 brY
 cpG
 bsI
-bsI
+bvV
 bsI
 bsI
 bwS
@@ -54691,7 +54374,7 @@ boa
 brX
 bsN
 bsI
-bsI
+bvV
 bsI
 bvT
 bwS
@@ -54948,7 +54631,7 @@ bfK
 brX
 bsI
 bsI
-bsI
+bvV
 bsI
 wGo
 bwT
@@ -55205,7 +54888,7 @@ bfK
 brX
 bsI
 bsI
-bsI
+bvV
 bsI
 bvT
 bwS
@@ -55462,7 +55145,7 @@ bnS
 brX
 bsI
 bsI
-bsI
+bvV
 bsI
 bsI
 bwS
@@ -55719,7 +55402,7 @@ boa
 aXj
 cXs
 aMc
-bsI
+bvV
 bsI
 bsI
 bwS
@@ -55976,7 +55659,7 @@ aXj
 aXj
 bsI
 bsI
-bsI
+bvV
 bsI
 bsI
 bLX
@@ -56233,7 +55916,7 @@ bwL
 bzp
 bsI
 bsI
-bsI
+bvV
 bsI
 bvS
 bLX
@@ -58478,7 +58161,7 @@ aaa
 aaQ
 aju
 ajR
-air
+aaP
 aju
 agO
 agO
@@ -58737,7 +58420,7 @@ ahO
 air
 aiV
 adU
-aPA
+ahu
 aPA
 aju
 aju
@@ -61596,7 +61279,7 @@ aEr
 aEr
 aEr
 aHS
-aJG
+bjM
 bjM
 cpo
 aLV
@@ -62633,7 +62316,7 @@ aLV
 bsy
 aLV
 bqR
-blC
+aNy
 bNK
 blC
 bqR
@@ -63907,7 +63590,7 @@ aju
 alc
 alc
 aGI
-alc
+ahT
 aPl
 aNq
 alc
@@ -64164,7 +63847,7 @@ axY
 alc
 alc
 alc
-alc
+aXu
 alc
 alc
 alc
@@ -64421,7 +64104,7 @@ alc
 alc
 alc
 alc
-edW
+aqT
 alc
 aJs
 alc
@@ -64674,9 +64357,9 @@ aXu
 aXu
 aXu
 aXu
-alc
-alc
-alc
+aXu
+aXu
+aXu
 aHe
 aXu
 aXu
@@ -65251,7 +64934,7 @@ pjg
 bJB
 bXO
 ccD
-ccD
+bqh
 ccD
 cbs
 bJB
@@ -65765,7 +65448,7 @@ ygU
 cuj
 qQD
 pAS
-bPu
+rwY
 bVv
 pAS
 aak
@@ -66258,7 +65941,7 @@ vxy
 bjW
 bjW
 bjW
-bwl
+boW
 bxk
 byI
 bAs
@@ -66724,7 +66407,7 @@ ayf
 aBM
 aye
 aye
-aFM
+aLg
 kcg
 hhm
 rPB
@@ -67030,8 +66713,8 @@ bub
 bwl
 csc
 bwl
-bwl
-bwl
+bjW
+bjW
 bAu
 bBT
 cvV
@@ -67238,7 +66921,7 @@ aye
 aBM
 aye
 aye
-aEJ
+aLg
 kcg
 qIF
 rPB
@@ -68541,10 +68224,10 @@ cgz
 cgz
 aak
 aak
-aaa
-aaa
-aaa
-aaa
+aak
+aak
+aak
+aak
 aak
 aak
 aOk
@@ -68800,7 +68483,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 cgz
 cgz
 cgz
@@ -69025,7 +68708,7 @@ aaa
 aaa
 aaa
 aaa
-aqZ
+aaa
 aAE
 aNk
 avR
@@ -69057,7 +68740,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 aIU
 jVy
@@ -69282,7 +68965,7 @@ aaa
 aaa
 aaa
 aaa
-aqZ
+aaa
 axH
 ass
 aCJ
@@ -69314,7 +68997,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aFD
@@ -69539,7 +69222,7 @@ aaa
 aaa
 aaa
 aaa
-aqZ
+aaa
 axH
 asy
 atB
@@ -69571,7 +69254,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aOu
@@ -69796,7 +69479,7 @@ aaa
 aaa
 aaa
 aaa
-aLW
+aaa
 cij
 cij
 cij
@@ -69828,7 +69511,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aHM
@@ -70053,7 +69736,7 @@ aaa
 aaa
 aaa
 aaa
-aLW
+aaa
 cij
 coV
 coV
@@ -70085,7 +69768,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aMR
@@ -70342,7 +70025,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aOu
@@ -70599,7 +70282,7 @@ aak
 aaa
 aaa
 aaa
-aaa
+aak
 aXC
 jVy
 aOu
@@ -70852,11 +70535,11 @@ cgz
 cgz
 cMH
 aNA
+aak
 aaa
 aaa
 aaa
-aaa
-aaa
+aak
 aNA
 aEF
 jVy
@@ -71109,11 +70792,11 @@ bVq
 coV
 cMH
 cgz
+aak
 aaa
 aaa
 aaa
-aaa
-aaa
+aak
 cgz
 aQK
 aNL
@@ -71366,11 +71049,11 @@ cgz
 coV
 cMH
 cgz
+aak
 aaa
 aaa
 aaa
-aaa
-aaa
+aak
 cgz
 cgz
 cgz
@@ -71623,15 +71306,15 @@ cgz
 coV
 cMH
 cgz
+aak
+aak
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aak
+aak
+aak
+aak
+aak
+aak
 cgz
 aZS
 bhA
@@ -71881,14 +71564,14 @@ coV
 cMH
 cgz
 cgz
+aak
+aaa
+aak
 aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+aak
 cgz
 bkk
 cMH
@@ -73450,8 +73133,8 @@ cAQ
 cAQ
 cAQ
 cAQ
-btm
-btm
+bnB
+buR
 buR
 btm
 btm
@@ -73931,7 +73614,7 @@ aaa
 aaa
 cij
 coV
-coV
+aqZ
 cgz
 ykc
 aFX
@@ -74188,7 +73871,7 @@ aaa
 aaa
 cij
 coV
-coV
+aJG
 cgz
 dJu
 cMH
@@ -74958,7 +74641,7 @@ aaa
 aaa
 aaa
 cij
-coV
+cij
 coV
 cgz
 aFV
@@ -74977,9 +74660,9 @@ rFH
 jti
 oRH
 uOh
-lOx
-xFO
-gdP
+aOI
+bhY
+bio
 cAQ
 aYj
 bdG
@@ -75214,8 +74897,8 @@ aaa
 aaa
 aaa
 aaa
+aaa
 cij
-coV
 coV
 cgz
 ykc
@@ -75471,8 +75154,8 @@ aaa
 aaa
 aaa
 aaa
+aaa
 cij
-aqT
 coV
 coV
 cod
@@ -75728,9 +75411,9 @@ aaa
 aaa
 aaa
 aaa
+aaa
 cij
-bYB
-coV
+cij
 coV
 coV
 bVq
@@ -75985,8 +75668,8 @@ aak
 aak
 aak
 aak
-cij
-cij
+aak
+aak
 cij
 cgz
 cgz
@@ -76244,11 +75927,11 @@ aGB
 aQC
 aQC
 aQC
-aQC
+aLW
+coV
+coV
 aNx
 coV
-coV
-bhY
 cMH
 coV
 cgz
@@ -80639,8 +80322,8 @@ cMH
 cgz
 coV
 coV
-cMH
-bmd
+blc
+cij
 cij
 cij
 cij
@@ -80895,7 +80578,7 @@ coV
 cMH
 cgz
 coV
-coV
+bjv
 cMH
 bme
 cij
@@ -80903,7 +80586,7 @@ boL
 bpY
 bdz
 bje
-btB
+bnD
 btm
 buR
 buR
@@ -81152,7 +80835,7 @@ coV
 cMH
 gMJ
 cMH
-bjv
+cMH
 cMH
 aHO
 cij
@@ -81409,9 +81092,9 @@ cgz
 cgz
 cgz
 coV
-coV
+aTe
 cMH
-bmy
+cMH
 cij
 boN
 bqa
@@ -81925,16 +81608,16 @@ aak
 aak
 bje
 bkL
-brM
+bmj
 bnw
 boP
-brM
+bmy
 brL
 bje
+bnE
+buh
 btm
-btm
-btm
-btm
+bvu
 jUy
 aGP
 cvV
@@ -82184,16 +81867,16 @@ bje
 bkM
 bmj
 bnx
-bnx
-bmj
+bnw
+bmy
 brM
-bje
+bmD
+btB
 btm
 btm
 btm
-btm
-bwD
-bxD
+jUy
+aGP
 cvV
 rwY
 bVv
@@ -82440,17 +82123,17 @@ aak
 bje
 bkN
 bmk
-bny
+boQ
 boQ
 bqd
 brM
 bje
 btD
-buh
 btm
-bvu
 btm
-bzr
+btm
+jUy
+aGP
 cvV
 rwY
 bVv
@@ -82696,19 +82379,19 @@ aaa
 aak
 bje
 bkO
-bmk
+bmm
 bnz
-bny
-bqd
 brM
-bsm
-btB
-btm
-btm
-btm
-btm
+brM
+brM
+bje
 bzy
-cvV
+bzy
+bzy
+bzy
+bzy
+bzy
+pAS
 rwY
 bVv
 cvV
@@ -82952,20 +82635,20 @@ aaa
 aaa
 aak
 bje
-blc
-bmD
-bnJ
-bnJ
-bmj
-brW
 bje
-buk
-bul
-btm
-bvI
-btm
-bzH
-cvV
+bje
+bje
+bje
+bje
+bje
+bje
+aak
+aak
+aak
+aak
+aak
+aak
+pAS
 ckb
 bVv
 whV
@@ -83208,23 +82891,23 @@ aaa
 aaa
 aaa
 aak
-bje
-bje
-bje
-bje
-bje
-bje
-bje
-bje
-btF
-btF
-btF
-btF
-btF
-bVT
-cvV
-cvV
-cvV
+aak
+aak
+aak
+aak
+aak
+aak
+aak
+aak
+aak
+aaa
+aaa
+aaa
+aaa
+aak
+pAS
+ctm
+bqe
 cvV
 bVv
 rwY
@@ -83464,24 +83147,24 @@ aaa
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aak
 aak
-aak
-bmm
-bnB
-bqe
-bqe
-boU
-cek
-bst
-bst
-bst
-bst
-bst
-bGC
-bzB
-bBh
-bCN
+ctm
+rwY
 cvV
 bVv
 rwY
@@ -83723,25 +83406,25 @@ aaa
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aak
-bmm
-bnF
-boS
-bqj
-brO
-bsn
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-bst
+ctm
 bCO
 cvV
 bVv
-rwY
+bVv
 cvV
 aGw
 nTn
@@ -83980,25 +83663,25 @@ aaa
 aaa
 aaa
 aaa
-aak
-bmm
-bnD
-bst
-bst
-boU
-bsn
-cGG
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-cvV
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+pAS
+pAS
 bVv
-rwY
 cvV
 aIN
 gpP
@@ -84237,25 +83920,25 @@ aaa
 aaa
 aaa
 aaa
-aak
-bmm
-bmm
-boU
-bqh
-bmm
-bsp
-bst
-bst
-bst
-bvy
-bst
-bst
-bst
-bBi
-ahu
-cvV
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+pAS
 bVv
-rwY
 cvV
 cvV
 aMH
@@ -84494,25 +84177,25 @@ aaa
 aaa
 aaa
 aaa
-aak
-bmm
-bnE
-bqe
-bst
-boU
-bOn
-cGH
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-ahT
-ceu
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+pAS
 bVv
-rwY
 rwY
 rwY
 bVv
@@ -84751,24 +84434,24 @@ aaa
 aaa
 aaa
 aaa
-aak
-bmm
-bnF
-boS
-bqj
-brP
-bOn
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-bst
-bCP
-cvV
-bVv
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+pAS
 bVv
 bVv
 bVv
@@ -85009,26 +84692,26 @@ aaa
 aaa
 aaa
 aaa
-bmm
-bnQ
-boW
-bst
-boU
-bOn
-btH
-bvh
-bvA
-bwa
-bwH
-bst
-btH
-bst
-btH
-cvV
-cvV
-ctm
-bWN
-ctm
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+pAS
+pAS
+pAS
+pAS
 pAS
 pAS
 pAS
@@ -85266,29 +84949,29 @@ aaa
 aaa
 aaa
 aaa
-bmm
-bmm
-boU
-bql
-boU
-bss
-boU
-bmm
-boU
-bmm
-boU
-cVT
-boU
-bss
-boU
-cvV
-aaa
-ctm
-rwY
-ctm
 aaa
 aaa
 aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aak
+aak
+aak
+aak
+aak
+aak
+aak
 pAS
 pAS
 pAS
@@ -85525,24 +85208,24 @@ aaa
 aaa
 aaa
 aaa
-boU
-bVQ
-boU
-bHT
-boU
 aaa
 aaa
 aaa
-boU
-bVQ
-boU
-bHT
-boU
 aaa
 aaa
-ctm
-bXc
-ctm
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -85782,19 +85465,19 @@ aaa
 aaa
 aaa
 aaa
-boU
-bst
-boU
-bst
-boU
 aaa
 aaa
 aaa
-boU
-bst
-boU
-bst
-boU
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -86039,19 +85722,19 @@ aaa
 aaa
 aaa
 aaa
-boU
-bqn
-boU
-bxF
-boU
-aak
-aak
-aak
-boU
-bxF
-boU
-bxF
-boU
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
@@ -86296,19 +85979,19 @@ aaa
 aaa
 aaa
 aaa
-aaP
-aaa
-aaP
-bQo
-aaP
 aaa
 aaa
 aaa
-aaP
 aaa
-aaP
 aaa
-aaP
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
+aaa
 aaa
 aaa
 aaa
