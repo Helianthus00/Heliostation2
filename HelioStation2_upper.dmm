@@ -723,7 +723,14 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
-/obj/machinery/navbeacon/wayfinding,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
+"arz" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod";
+	safety_mode = 1
+	},
+/obj/machinery/navbeacon/wayfinding/dockescpod2,
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "arE" = (
@@ -1697,8 +1704,8 @@
 	id = "hopqueue";
 	name = "HoP Queue Shutters"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/ticket_machine/directional/east,
+/obj/machinery/navbeacon/wayfinding/hop,
 /turf/open/floor/iron,
 /area/hallway/secondary/command)
 "aRT" = (
@@ -4952,7 +4959,6 @@
 /area/engineering/engine_smes)
 "cCi" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -7281,6 +7287,17 @@
 	},
 /turf/open/floor/iron,
 /area/maintenance/department/medical)
+"dJw" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Airlock";
+	safety_mode = 1
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
+/obj/machinery/navbeacon/wayfinding/dockesc,
+/turf/open/floor/iron,
+/area/hallway/secondary/exit)
 "dJB" = (
 /obj/machinery/camera/directional/east{
 	c_tag = "Secure EVAC";
@@ -7433,6 +7450,14 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/lobby)
+"dNs" = (
+/obj/machinery/door/airlock/external{
+	name = "Escape Pod";
+	safety_mode = 1
+	},
+/obj/machinery/navbeacon/wayfinding/dockescpod1,
+/turf/open/floor/iron,
+/area/hallway/secondary/entry)
 "dNz" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -20808,9 +20833,7 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/machinery/navbeacon/wayfinding{
-	location = "Arrival Shuttle"
-	},
+/obj/machinery/navbeacon/wayfinding/dockarrival,
 /turf/open/floor/plating,
 /area/hallway/secondary/entry)
 "kmb" = (
@@ -21107,6 +21130,8 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/aiupload,
+/obj/machinery/navbeacon/wayfinding/aiupload,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "kuU" = (
@@ -25415,6 +25440,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/incinerator,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
 "mAM" = (
@@ -26781,6 +26807,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/chemfactory,
 /turf/open/floor/iron/white,
 /area/medical/chemistry)
 "nhn" = (
@@ -26858,6 +26885,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/minisat_access_ai,
 /turf/open/floor/iron,
 /area/engineering/transit_tube)
 "njV" = (
@@ -33936,18 +33964,9 @@
 /turf/open/floor/carpet/donk,
 /area/maintenance/department/cargo)
 "qOK" = (
-/obj/machinery/door/airlock/external{
-	name = "Escape Airlock";
-	safety_mode = 1
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/navbeacon/wayfinding{
-	location = "Arrival Shuttle"
-	},
+/obj/machinery/navbeacon/wayfinding/dorms,
 /turf/open/floor/iron,
-/area/hallway/secondary/exit)
+/area/commons/dorms)
 "qOU" = (
 /obj/structure/table,
 /turf/open/floor/glass/reinforced,
@@ -38445,6 +38464,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/atmos,
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
 "ter" = (
@@ -40083,6 +40103,8 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/bridge,
+/obj/machinery/navbeacon/wayfinding/bridge,
 /turf/open/floor/iron/dark,
 /area/hallway/secondary/command)
 "tUT" = (
@@ -47460,6 +47482,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/teleporter,
 /turf/open/floor/iron/dark,
 /area/command/teleporter)
 "xAu" = (
@@ -63479,7 +63502,7 @@ pGV
 tlJ
 tlJ
 tlJ
-vog
+arz
 tlJ
 tlJ
 pXl
@@ -63501,7 +63524,7 @@ xSh
 ePG
 tlJ
 tlJ
-vog
+dNs
 tlJ
 qoL
 qWo
@@ -67606,7 +67629,7 @@ tDG
 tDG
 igc
 xTf
-klI
+jFK
 hSj
 xSh
 xSh
@@ -78895,7 +78918,7 @@ bCl
 lMj
 dVi
 vhy
-dId
+qOK
 hIn
 hIn
 hIn
@@ -103327,13 +103350,13 @@ eIq
 mGd
 vBO
 mGd
+dJw
+mGd
+eIq
+mGd
+eIq
+mGd
 huH
-mGd
-eIq
-mGd
-eIq
-mGd
-qOK
 mGd
 huH
 mGd

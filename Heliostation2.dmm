@@ -881,6 +881,7 @@
 	cycle_id = "brig-pods"
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/dockescpod4,
 /turf/open/floor/plating,
 /area/security/brig)
 "adV" = (
@@ -1096,7 +1097,6 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "aeD" = (
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
@@ -1197,23 +1197,14 @@
 /turf/open/floor/iron,
 /area/security/processing)
 "afh" = (
-/obj/machinery/door/poddoor/shutters{
-	id = "mechbay";
-	name = "Mech Bay Shutters"
-	},
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
-/obj/effect/turf_decal/tile/purple{
-	color = "#990099";
-	dir = 1;
-	name = "Science purple corner"
+/obj/effect/turf_decal/tile/bar,
+/obj/effect/turf_decal/tile/bar{
+	dir = 1
 	},
-/obj/effect/turf_decal/tile/purple{
-	color = "#990099";
-	name = "Science purple corner"
-	},
+/obj/machinery/navbeacon/wayfinding/bar,
 /turf/open/floor/iron,
-/area/science/robotics/mechbay)
+/area/service/bar/atrium)
 "afj" = (
 /obj/machinery/airalarm/directional/north,
 /obj/effect/turf_decal/tile/red{
@@ -2198,21 +2189,6 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/security/brig)
-"alJ" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=command1";
-	location = "security";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/hallway/primary/fore)
 "alK" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2492,7 +2468,6 @@
 	name = "Brig";
 	req_access_txt = "63"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/red{
 	color = "#FF0000";
 	name = "Security red corner"
@@ -2512,6 +2487,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/navbeacon/wayfinding/sec,
 /turf/open/floor/iron,
 /area/security/brig)
 "anf" = (
@@ -4348,17 +4324,6 @@
 /obj/machinery/status_display/evac/directional/west,
 /turf/open/floor/iron,
 /area/hallway/primary/fore)
-"axZ" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=bridge";
-	location = "command1";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/hallway/primary/fore)
 "ayd" = (
 /obj/machinery/camera/directional/north{
 	c_tag = "Command Hallway - Entrance";
@@ -4630,17 +4595,6 @@
 "azs" = (
 /turf/closed/wall/r_wall,
 /area/security/warden)
-"azt" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=red";
-	location = "command2";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/hallway/primary/fore)
 "azu" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/door/firedoor,
@@ -4695,6 +4649,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/gateway,
 /turf/open/floor/iron,
 /area/command/gateway)
 "azA" = (
@@ -4836,6 +4791,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/eva,
 /turf/open/floor/iron,
 /area/ai_monitored/command/storage/eva)
 "aAB" = (
@@ -6276,7 +6232,6 @@
 	name = "Morgue";
 	req_one_access_txt = "6;5;28"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/blue{
 	color = "#73c2fb";
 	dir = 1;
@@ -10810,7 +10765,6 @@
 /area/commons/storage/tools)
 "bkh" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
 /turf/open/floor/iron,
 /area/commons/fitness)
 "bkj" = (
@@ -12201,15 +12155,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/central)
-"bqT" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=neutral";
-	location = "red";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron,
-/area/hallway/primary/central)
 "bqU" = (
 /obj/effect/spawner/random/vending/colavend,
 /turf/open/floor/iron,
@@ -12241,16 +12186,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
-"bqZ" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=security";
-	location = "blue";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron,
-/area/hallway/primary/central)
 "brb" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/preopen{
@@ -12445,7 +12380,6 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "bsa" = (
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/yellow{
 	color = "#FFD700";
 	dir = 1;
@@ -12469,10 +12403,10 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Chapel"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/chapel,
 /turf/open/floor/carpet,
 /area/service/chapel)
 "bsd" = (
@@ -12488,7 +12422,6 @@
 	id_tag = "Potty1";
 	name = "Unisex Restrooms"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /turf/open/floor/iron/white,
@@ -12743,7 +12676,6 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Courtroom"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 4
@@ -12784,26 +12716,8 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/iron,
 /area/hallway/primary/central)
-"buc" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=arrivals";
-	location = "neutral";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/floor/iron,
-/area/hallway/primary/central)
 "bud" = (
 /obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=2";
-	freq = 1400;
-	location = "Engineering";
-	name = "Delivery Beacon - Engineering"
-	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bue" = (
@@ -12820,15 +12734,6 @@
 /obj/structure/flora/ausbushes/ppflowers,
 /obj/effect/landmark/start/hangover,
 /turf/open/floor/grass,
-/area/hallway/primary/central)
-"buf" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=blue";
-	location = "lblue";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron,
 /area/hallway/primary/central)
 "buh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -12852,17 +12757,6 @@
 /obj/machinery/microwave,
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
-"bur" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=green";
-	location = "arrivals";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold/scrubbers/hidden/layer2,
-/obj/structure/cable,
-/turf/open/floor/iron,
-/area/hallway/primary/port)
 "but" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/wood,
@@ -12986,15 +12880,6 @@
 	},
 /turf/open/floor/iron,
 /area/hallway/primary/central)
-"bvr" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=yellow";
-	location = "green";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/turf/open/floor/iron,
-/area/hallway/primary/central)
 "bvs" = (
 /obj/structure/table,
 /obj/item/sensor_device,
@@ -13002,11 +12887,6 @@
 /turf/open/floor/iron/white,
 /area/medical/storage)
 "bvt" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=research";
-	location = "purple";
-	name = "Patrol Beacon"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -13348,6 +13228,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/navbeacon/wayfinding/janitor,
 /turf/open/floor/iron,
 /area/service/janitor)
 "bwU" = (
@@ -13375,7 +13256,6 @@
 /area/service/hydroponics)
 "bwY" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/door/airlock/public/glass{
 	name = "Lounge"
 	},
@@ -13417,6 +13297,7 @@
 	name = "Kitchen";
 	req_one_access_txt = "28;35"
 	},
+/obj/machinery/navbeacon/wayfinding/kitchen,
 /turf/open/floor/iron/cafeteria,
 /area/service/kitchen)
 "bxd" = (
@@ -13597,11 +13478,11 @@
 	name = "Hydroponics";
 	req_one_access_txt = "35;28"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/green{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/green,
+/obj/machinery/navbeacon/wayfinding/hydro,
 /turf/open/floor/iron{
 	dir = 1
 	},
@@ -13729,6 +13610,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/research,
 /turf/open/floor/iron/white,
 /area/science)
 "bxW" = (
@@ -13959,22 +13841,7 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron,
 /area/hallway/primary/central)
-"byD" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=cargo";
-	location = "yellow";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/door/firedoor,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/iron,
-/area/hallway/primary/central)
 "byE" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=purple";
-	location = "brown";
-	name = "Patrol Beacon"
-	},
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/iron,
@@ -14293,14 +14160,6 @@
 /obj/machinery/ecto_sniffer,
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
-"bzz" = (
-/obj/machinery/navbeacon/wayfinding,
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable,
-/turf/open/floor/iron/white,
-/area/science)
 "bzA" = (
 /obj/structure/sink{
 	dir = 8;
@@ -15027,13 +14886,6 @@
 /area/hallway/primary/central)
 "bBT" = (
 /obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=4";
-	dir = 4;
-	freq = 1400;
-	location = "Medbay";
-	name = "Delivery Beacon - Medbay"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/maintenance/starboard)
@@ -15322,13 +15174,6 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bCR" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=8";
-	dir = 8;
-	freq = 1400;
-	location = "Research";
-	name = "Delivery Beacon - Research"
-	},
 /obj/effect/turf_decal/bot,
 /obj/structure/plasticflaps/opaque,
 /turf/open/floor/iron/white,
@@ -15512,13 +15357,6 @@
 /area/science)
 "bDw" = (
 /obj/structure/plasticflaps/opaque,
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=8";
-	dir = 8;
-	freq = 1400;
-	location = "Custodian";
-	name = "Delivery Beacon - Bar"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/hallway/secondary/service)
@@ -18011,7 +17849,6 @@
 	name = "Law Reception"
 	},
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -18019,6 +17856,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/machinery/navbeacon/wayfinding/lawyer,
 /turf/open/floor/carpet,
 /area/service/lawoffice)
 "bQr" = (
@@ -18786,6 +18624,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/court,
 /turf/open/floor/iron/dark,
 /area/security/courtroom)
 "bVq" = (
@@ -22057,7 +21896,6 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron,
@@ -22730,16 +22568,6 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/hallway/primary/aft)
-"crC" = (
-/obj/machinery/navbeacon{
-	codes_txt = "patrol;next_patrol=brown";
-	location = "cargo";
-	name = "Patrol Beacon"
-	},
-/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
-/turf/open/floor/iron,
-/area/hallway/primary/aft)
 "crE" = (
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
@@ -22753,10 +22581,10 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Library"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/navbeacon/wayfinding/library,
 /turf/open/floor/carpet/green,
 /area/service/library)
 "crH" = (
@@ -23463,12 +23291,6 @@
 /turf/open/floor/iron,
 /area/engineering/lobby)
 "cur" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=2";
-	freq = 1400;
-	location = "QM#1";
-	name = "Delivery Beacon - QM"
-	},
 /obj/structure/sign/departments/drop{
 	pixel_y = 30
 	},
@@ -23490,12 +23312,6 @@
 /turf/open/floor/iron,
 /area/cargo/warehouse)
 "cus" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=2";
-	freq = 1400;
-	location = "QM#2";
-	name = "Delivery Beacon - QM"
-	},
 /mob/living/simple_animal/bot/mulebot{
 	home_destination = "QM #2";
 	suffix = "#2"
@@ -23762,12 +23578,6 @@
 /turf/open/floor/iron,
 /area/cargo/office)
 "cvu" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=2";
-	freq = 1400;
-	location = "QM#3";
-	name = "Delivery Beacon - QM"
-	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/button/door/directional/north{
 	id = "qm_warehouse";
@@ -23785,12 +23595,6 @@
 "cvv" = (
 /obj/machinery/status_display/supply{
 	pixel_y = 30
-	},
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=2";
-	freq = 1400;
-	location = "QM#4";
-	name = "Delivery Beacon - QM"
 	},
 /obj/effect/turf_decal/bot,
 /obj/machinery/light/directional/north,
@@ -23870,6 +23674,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/engineering,
 /turf/open/floor/iron,
 /area/engineering/lobby)
 "cvJ" = (
@@ -24208,6 +24013,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/disposals,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cwT" = (
@@ -24973,6 +24779,7 @@
 	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/navbeacon/wayfinding/vault,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/command/nuke_storage)
 "cAX" = (
@@ -26720,7 +26527,6 @@
 /turf/open/floor/plating,
 /area/cargo/miningoffice)
 "cWc" = (
-/obj/machinery/navbeacon/wayfinding,
 /obj/machinery/atmospherics/pipe/smart/manifold/supply/hidden/layer4{
 	dir = 1
 	},
@@ -31587,7 +31393,6 @@
 /obj/machinery/door/airlock/public/glass{
 	name = "Primary Tool Storage"
 	},
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/yellow{
 	color = "#FFD700";
 	dir = 1;
@@ -31601,6 +31406,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/tools,
 /turf/open/floor/iron,
 /area/commons/storage/tools)
 "iJH" = (
@@ -33370,6 +33176,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/techstorage,
 /turf/open/floor/iron,
 /area/engineering/storage/tech)
 "kTC" = (
@@ -35678,6 +35485,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/tcomms,
 /turf/open/floor/iron,
 /area/tcommsat/computer)
 "nHd" = (
@@ -35798,6 +35606,7 @@
 	safety_mode = 1
 	},
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/navbeacon/wayfinding/dockescpod3,
 /turf/open/floor/plating,
 /area/engineering/lobby)
 "nRa" = (
@@ -38096,6 +37905,7 @@
 	name = "Detective's Office";
 	req_access_txt = "4"
 	},
+/obj/machinery/navbeacon/wayfinding/det,
 /turf/open/floor/wood,
 /area/security/detectives_office)
 "qKl" = (
@@ -39662,7 +39472,6 @@
 /area/maintenance/port/aft)
 "sHu" = (
 /obj/machinery/door/firedoor,
-/obj/machinery/navbeacon/wayfinding,
 /obj/effect/turf_decal/tile/blue{
 	color = "#73c2fb";
 	name = "Medical blue corner"
@@ -39675,6 +39484,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/navbeacon/wayfinding/med,
 /turf/open/floor/iron/white,
 /area/medical/medbay/lobby)
 "sHS" = (
@@ -39777,12 +39587,6 @@
 /turf/open/floor/iron/dark/smooth_large,
 /area/cargo/office)
 "sQU" = (
-/obj/machinery/navbeacon{
-	codes_txt = "delivery;dir=1";
-	freq = 1400;
-	location = "Tool Closet";
-	name = "Delivery Beacon - Tool Closet"
-	},
 /obj/effect/turf_decal/bot,
 /turf/open/floor/iron,
 /area/commons/storage/tools)
@@ -41644,6 +41448,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/cargo,
 /turf/open/floor/iron,
 /area/cargo/storage)
 "vnH" = (
@@ -60799,7 +60604,7 @@ nBt
 eLN
 ogR
 iyn
-bur
+tFB
 bsI
 hEg
 bwM
@@ -73909,7 +73714,7 @@ vWh
 jCd
 bjW
 qyu
-bxg
+afh
 byx
 byx
 bBL
@@ -75704,9 +75509,9 @@ lno
 bqV
 bxk
 cXu
-buc
+bvt
 tRe
-bvr
+bwm
 oZZ
 bxd
 byX
@@ -76472,7 +76277,7 @@ bjW
 ccu
 tdQ
 bjW
-bqT
+bwm
 lHB
 bpB
 cSG
@@ -76480,7 +76285,7 @@ buH
 qxr
 dDm
 lJk
-byD
+byE
 siA
 siA
 siA
@@ -76669,7 +76474,7 @@ akZ
 akZ
 akc
 bdd
-alJ
+lAl
 cgY
 cgY
 cgY
@@ -76683,9 +76488,9 @@ aHe
 cgY
 cgY
 lAl
-axZ
+cgY
 ggA
-azt
+cgY
 aCT
 cgY
 pXg
@@ -76770,7 +76575,7 @@ hOS
 cjr
 sYh
 sOI
-crC
+iyT
 iyT
 iYb
 pDJ
@@ -76986,7 +76791,7 @@ kZW
 bge
 ycU
 kZW
-bqZ
+byE
 lJk
 wQH
 umq
@@ -77760,7 +77565,7 @@ bpE
 bqW
 bev
 bth
-buf
+bwm
 fyq
 bvt
 bwm
@@ -87017,7 +86822,7 @@ gQV
 cVL
 btm
 aVx
-afh
+bzc
 xUH
 bCm
 bDY
@@ -90358,7 +90163,7 @@ hCX
 kQu
 adw
 bxV
-bzz
+hXM
 bBl
 bCL
 llS
