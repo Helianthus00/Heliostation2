@@ -2914,6 +2914,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "buK" = (
@@ -7336,20 +7337,8 @@
 /turf/open/floor/iron,
 /area/cargo/miningoffice)
 "dDJ" = (
-/obj/structure/table,
-/obj/item/ai_module/reset/purge,
-/obj/effect/spawner/random/aimodule/harmful,
-/obj/effect/spawner/random/aimodule/harmful,
-/obj/machinery/door/window/brigdoor/northright{
-	dir = 8;
-	name = "Core Modules";
-	req_access_txt = "20"
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/circuit,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "dDL" = (
 /obj/item/toy/plush/freddy,
@@ -15605,10 +15594,9 @@
 /turf/open/openspace,
 /area/space/nearstation)
 "huc" = (
-/obj/structure/lattice,
-/obj/structure/grille,
-/turf/open/space/basic,
-/area/space/nearstation)
+/obj/structure/cable,
+/turf/open/floor/circuit,
+/area/ai_monitored/turret_protected/ai_upload)
 "huH" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Airlock";
@@ -21889,7 +21877,26 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "kpG" = (
-/obj/machinery/airalarm/directional/north,
+/obj/structure/table,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/machinery/door/window/brigdoor{
+	dir = 1;
+	name = "Core Modules";
+	req_access_txt = "20"
+	},
+/obj/effect/spawner/random/aimodule/harmless,
+/obj/effect/spawner/random/aimodule/neutral,
+/obj/item/ai_module/supplied/freeform,
+/obj/item/ai_module/core/freeformcore,
+/obj/item/ai_module/core/full/reporter,
+/obj/item/ai_module/core/full/asimov,
+/obj/item/ai_module/core/full/drone,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "kpJ" = (
@@ -21961,9 +21968,13 @@
 /turf/open/floor/plating,
 /area/maintenance/department/medical)
 "ktu" = (
-/obj/item/ai_module/toy_ai,
 /obj/structure/table,
-/turf/open/floor/iron/dark,
+/obj/item/ai_module/reset,
+/obj/item/ai_module/supplied/quarantine,
+/obj/item/ai_module/supplied/safeguard,
+/obj/item/ai_module/supplied/freeform,
+/obj/item/ai_module/toy_ai,
+/turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "ktz" = (
 /obj/machinery/skill_station,
@@ -22013,6 +22024,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
+/obj/machinery/navbeacon/wayfinding/aiupload,
 /obj/machinery/navbeacon/wayfinding/aiupload,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark,
@@ -22213,6 +22225,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
+/obj/structure/cable,
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "kAn" = (
@@ -26510,8 +26523,23 @@
 /turf/open/floor/engine,
 /area/command/bridge)
 "mBT" = (
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable,
+/obj/structure/table,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/window/brigdoor/northright{
+	name = "Core Modules";
+	req_access_txt = "20"
+	},
+/obj/effect/spawner/random/aimodule/harmful,
+/obj/effect/spawner/random/aimodule/harmful,
+/obj/item/ai_module/reset/purge,
+/obj/item/ai_module/supplied/oxygen,
+/obj/item/ai_module/zeroth/onehuman,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "mBV" = (
@@ -28978,7 +29006,7 @@
 /area/ai_monitored/turret_protected/aisat/service)
 "nGe" = (
 /obj/machinery/holopad/secure,
-/turf/open/floor/iron/dark,
+/turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "nGy" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
@@ -32357,8 +32385,8 @@
 /turf/open/floor/carpet/red,
 /area/commons/dorms)
 "ppi" = (
-/obj/structure/cable,
-/turf/open/floor/iron/dark,
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/airless,
 /area/ai_monitored/turret_protected/ai_upload)
 "ppo" = (
 /obj/machinery/camera/motion/directional/west{
@@ -33294,10 +33322,14 @@
 /turf/open/floor/iron,
 /area/security/prison)
 "pPS" = (
+/obj/machinery/door/airlock/command{
+	name = "AI Upload";
+	req_access_txt = "16"
+	},
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/structure/cable,
-/turf/open/floor/circuit,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "pPT" = (
 /obj/machinery/door/airlock/maintenance{
@@ -35268,20 +35300,12 @@
 /turf/open/floor/iron/dark,
 /area/science/storage)
 "qNX" = (
-/obj/structure/table,
-/obj/item/ai_module/zeroth/onehuman,
-/obj/item/ai_module/supplied/oxygen,
-/obj/machinery/door/window/brigdoor/northright{
-	dir = 8;
-	name = "Core Modules";
-	req_access_txt = "20"
+/obj/machinery/power/apc/highcap/five_k{
+	areastring = "/area/ai_monitored/turret_protected/ai_upload";
+	name = "Upload APC";
+	pixel_y = -23
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/cable,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "qNY" = (
@@ -37097,19 +37121,10 @@
 /turf/open/floor/pod/dark,
 /area/maintenance/department/engine)
 "rHZ" = (
-/obj/structure/table,
-/obj/item/ai_module/core/freeformcore,
-/obj/machinery/door/window/brigdoor{
-	dir = 4;
-	name = "Core Modules";
-	req_access_txt = "20"
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 3
-	},
-/obj/structure/window/reinforced,
-/turf/open/floor/circuit,
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
+/obj/structure/cable,
+/turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai_upload)
 "rIb" = (
 /turf/open/floor/plating{
@@ -39734,16 +39749,6 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
-"sWE" = (
-/obj/structure/table,
-/obj/item/ai_module/supplied/freeform,
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 3
-	},
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai_upload)
 "sWV" = (
 /obj/structure/sign/poster/official/random{
 	pixel_x = 30
@@ -40869,13 +40874,6 @@
 /obj/structure/cable,
 /turf/open/floor/carpet/blue,
 /area/command/heads_quarters/captain)
-"tAz" = (
-/obj/structure/table,
-/obj/structure/window/reinforced,
-/obj/item/ai_module/supplied/quarantine,
-/obj/item/ai_module/reset,
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai_upload)
 "tAD" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -40953,16 +40951,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/maintenance/disposal/incinerator)
-"tDz" = (
-/obj/structure/table,
-/obj/item/ai_module/supplied/safeguard,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced,
-/obj/item/ai_module/supplied/protect_station,
-/turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/ai_upload)
 "tDG" = (
 /turf/open/openspace,
 /area/space)
@@ -48486,22 +48474,7 @@
 /turf/open/floor/iron,
 /area/hallway/secondary/entry)
 "xfo" = (
-/obj/structure/table,
-/obj/item/ai_module/core/full/drone,
-/obj/item/ai_module/core/full/asimov,
-/obj/item/ai_module/core/full/reporter,
-/obj/machinery/door/window/brigdoor{
-	dir = 4;
-	name = "Core Modules";
-	req_access_txt = "20"
-	},
-/obj/structure/window/reinforced{
-	dir = 8;
-	layer = 3
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/machinery/airalarm/directional/west,
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "xft" = (
@@ -49039,7 +49012,6 @@
 /turf/open/floor/plating,
 /area/engineering/atmospherics_engine)
 "xuR" = (
-/obj/structure/destructible/cult/item_dispenser/archives/library,
 /obj/item/book/codex_gigas,
 /turf/open/floor/wood,
 /area/service/library/private)
@@ -92083,7 +92055,7 @@ pGV
 pGV
 pGV
 pGV
-pGV
+qhu
 qhu
 qhu
 qhu
@@ -92341,10 +92313,10 @@ pGV
 pGV
 pGV
 qhu
-qhu
 nRP
+fzv
 xfo
-rHZ
+fzv
 nRP
 qhu
 qhu
@@ -92601,9 +92573,9 @@ qhu
 fzv
 fzv
 bbv
-bbv
-fzv
-fzv
+dDJ
+huc
+qNX
 qhu
 mnR
 mnR
@@ -92855,7 +92827,7 @@ pGV
 pGV
 pGV
 qhu
-kpG
+fzv
 bbv
 bbv
 kAl
@@ -93116,8 +93088,8 @@ lxF
 bdd
 bbv
 buy
-bbv
-sWE
+kpG
+fzv
 qhu
 mnR
 epN
@@ -93373,8 +93345,8 @@ rZO
 ktu
 nGe
 buy
-bbv
-tAz
+fzv
+fzv
 qhu
 mnR
 epN
@@ -93630,8 +93602,8 @@ dTQ
 koh
 bbv
 buy
-bbv
-tDz
+mBT
+fzv
 qhu
 mnR
 epN
@@ -93883,12 +93855,12 @@ pGV
 pGV
 pGV
 qhu
-mBT
-ppi
-ppi
-gch
-bbv
 fzv
+bbv
+bbv
+gch
+ppi
+ppi
 qhu
 uPz
 kVq
@@ -94145,7 +94117,7 @@ fzv
 bbv
 qdR
 pPS
-pPS
+rHZ
 kuS
 wwl
 koL
@@ -94397,11 +94369,11 @@ pGV
 pGV
 pGV
 qhu
+nRP
+fzv
+fzv
+nRP
 qhu
-nRP
-qNX
-dDJ
-nRP
 qhu
 qhu
 kKL
@@ -94653,13 +94625,13 @@ pGV
 pGV
 pGV
 pGV
-huc
+hTW
 qhu
 qhu
 qhu
 qhu
 qhu
-qhu
+pGV
 pGV
 kKL
 tru
