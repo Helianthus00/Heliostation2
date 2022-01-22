@@ -6588,6 +6588,9 @@
 /area/ai_monitored/turret_protected/ai)
 "dlL" = (
 /obj/machinery/airalarm/directional/south,
+/obj/structure/rack,
+/obj/item/beacon,
+/obj/item/beacon,
 /turf/open/floor/iron/dark,
 /area/command/teleporter)
 "dmn" = (
@@ -19925,9 +19928,6 @@
 /turf/open/floor/wood,
 /area/command/heads_quarters/captain)
 "jwm" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/cable,
@@ -22110,7 +22110,7 @@
 /obj/machinery/navbeacon/wayfinding/aiupload,
 /obj/machinery/door/firedoor,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/ai_upload)
+/area/command/meeting_room)
 "kuU" = (
 /obj/machinery/door/airlock/virology/glass{
 	name = "Isolation A";
@@ -26332,11 +26332,18 @@
 /turf/open/floor/plating,
 /area/maintenance/department/chapel)
 "muh" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	dir = 8;
+	name = "Medical blue corner"
 	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	name = "Command blue corner"
+	},
+/obj/machinery/suit_storage_unit/medical,
 /turf/open/floor/iron/white,
-/area/science/xenobiology)
+/area/medical/medbay/zone2)
 "muD" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /turf/open/floor/iron/dark,
@@ -29883,6 +29890,12 @@
 	},
 /turf/open/floor/wood,
 /area/hallway/secondary/service)
+"oer" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/iron/white,
+/area/science/xenobiology)
 "oeJ" = (
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
 	dir = 5
@@ -33563,6 +33576,10 @@
 	},
 /turf/open/floor/iron,
 /area/engineering/atmos/upper)
+"pSc" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/closed/wall/r_wall,
+/area/maintenance/department/science/xenobiology)
 "pSN" = (
 /obj/structure/table,
 /obj/item/paper_bin,
@@ -39972,12 +39989,12 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science/xenobiology)
 "sZD" = (
-/obj/structure/railing{
-	dir = 4
-	},
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
 /turf/open/floor/iron/white,
 /area/science/xenobiology)
 "taj" = (
@@ -43505,8 +43522,6 @@
 "uEB" = (
 /obj/structure/rack,
 /obj/item/storage/toolbox/mechanical,
-/obj/item/beacon,
-/obj/item/beacon,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
@@ -44812,6 +44827,19 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /turf/open/floor/carpet/red,
 /area/command/heads_quarters/hop)
+"vkr" = (
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	dir = 8;
+	name = "Medical blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#4169E1";
+	name = "Command blue corner"
+	},
+/obj/machinery/recharge_station,
+/turf/open/floor/iron/white,
+/area/medical/medbay/zone2)
 "vkJ" = (
 /obj/effect/turf_decal/stripes/box,
 /obj/effect/turf_decal/tile/blue{
@@ -48038,6 +48066,7 @@
 	dir = 8;
 	name = "Medical blue corner"
 	},
+/obj/machinery/suit_storage_unit/medical,
 /turf/open/floor/iron/white,
 /area/medical/medbay/zone2)
 "wPJ" = (
@@ -49369,9 +49398,6 @@
 /turf/open/floor/plating,
 /area/maintenance/department/science)
 "xyz" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron/white,
 /area/science/xenobiology)
@@ -92483,7 +92509,7 @@ xfo
 fzv
 nRP
 qhu
-qhu
+egW
 egW
 xOT
 mnR
@@ -92740,7 +92766,7 @@ bbv
 dDJ
 huc
 qNX
-qhu
+egW
 mnR
 mnR
 mDY
@@ -92997,7 +93023,7 @@ bbv
 kAl
 bbv
 fzv
-qhu
+egW
 mnR
 epN
 seK
@@ -93034,7 +93060,7 @@ sfi
 mTY
 rkj
 qLF
-wVa
+muh
 wfO
 wfO
 jsv
@@ -93254,7 +93280,7 @@ bbv
 buy
 kpG
 fzv
-qhu
+egW
 mnR
 epN
 rFT
@@ -93291,7 +93317,7 @@ sfi
 ojS
 wJz
 kXu
-wVa
+vkr
 wfO
 kNQ
 rey
@@ -93511,7 +93537,7 @@ nGe
 buy
 fzv
 fzv
-qhu
+egW
 mnR
 epN
 gcm
@@ -93768,7 +93794,7 @@ bbv
 buy
 mBT
 fzv
-qhu
+egW
 mnR
 epN
 ohA
@@ -94025,7 +94051,7 @@ bbv
 gch
 ppi
 ppi
-qhu
+egW
 uPz
 kVq
 hVh
@@ -94539,7 +94565,7 @@ fzv
 nRP
 qhu
 qhu
-qhu
+egW
 kKL
 lGy
 lGy
@@ -94886,7 +94912,7 @@ wMI
 wMI
 lXP
 vrT
-rAR
+lWu
 lWu
 tjq
 sZD
@@ -95143,11 +95169,11 @@ wMI
 wMI
 lXP
 dGp
-csh
-lWu
+pSc
 wMI
 wMI
-muh
+oer
+vAN
 mOY
 oQD
 eYh
@@ -95400,10 +95426,10 @@ lXP
 lXP
 lXP
 dGp
-csh
-lWu
-upL
+pSc
 wMI
+upL
+oer
 xyz
 mOY
 oQD
@@ -95658,7 +95684,7 @@ wYR
 elk
 mZF
 lWu
-lWu
+uTX
 uTX
 uTX
 uTX

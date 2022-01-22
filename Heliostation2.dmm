@@ -14761,7 +14761,6 @@
 /obj/structure/sign/poster/official/random{
 	pixel_x = 30
 	},
-/obj/structure/chair/stool,
 /obj/effect/turf_decal/tile/purple{
 	color = "#4D0067";
 	dir = 4;
@@ -14771,6 +14770,7 @@
 	color = "#4D0067";
 	name = "Science purple corner"
 	},
+/obj/structure/chair/stool/directional/north,
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
 "bBl" = (
@@ -15585,6 +15585,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/iron,
 /area/science/robotics/mechbay)
 "bDO" = (
@@ -15660,6 +15661,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/obj/item/radio/intercom/directional/south,
 /turf/open/floor/iron,
 /area/science/robotics/mechbay)
 "bEa" = (
@@ -16005,24 +16007,22 @@
 /turf/open/floor/iron/white,
 /area/science/explab)
 "bFl" = (
-/obj/machinery/airalarm/directional/west,
-/obj/structure/railing/corner{
-	dir = 4
-	},
+/obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron,
-/area/science/robotics/mechbay)
+/area/hallway/primary/starboard)
 "bFm" = (
 /obj/machinery/firealarm/directional/south,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/iron,
+/turf/closed/wall,
 /area/science/robotics/mechbay)
 "bFn" = (
-/obj/machinery/light_switch/directional/south,
-/obj/structure/railing{
-	dir = 1
+/obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4{
+	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2{
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/machinery/light_switch/directional/north,
 /turf/open/floor/iron,
 /area/science/robotics/mechbay)
 "bFo" = (
@@ -16090,12 +16090,15 @@
 /turf/open/floor/carpet/green,
 /area/service/library)
 "bFy" = (
-/obj/item/radio/intercom/directional/south,
-/obj/structure/railing{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/science/robotics/mechbay)
+/obj/structure/table,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/glass/fifty,
+/obj/effect/turf_decal/stripes/line,
+/obj/machinery/airalarm/directional/west,
+/turf/open/floor/iron/textured_large,
+/area/science/robotics/lab)
 "bFA" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -16141,11 +16144,13 @@
 /turf/open/floor/iron/dark,
 /area/science/lab)
 "bFG" = (
-/obj/structure/railing/corner{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/science/robotics/mechbay)
+/obj/structure/closet,
+/obj/item/clothing/under/costume_2021/char_suit,
+/obj/item/clothing/shoes/costume_2021/char_shoes,
+/obj/item/clothing/head/costume_2021/char_hat,
+/obj/item/clothing/gloves/costume_2021/char_gloves,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
 "bFL" = (
 /obj/structure/table,
 /obj/item/stack/sheet/iron/fifty,
@@ -16394,7 +16399,6 @@
 /turf/open/floor/plating,
 /area/security/checkpoint/science/research)
 "bGZ" = (
-/obj/structure/chair/stool,
 /obj/effect/turf_decal/tile/purple{
 	color = "#4D0067";
 	dir = 4;
@@ -16405,6 +16409,7 @@
 	dir = 1;
 	name = "Science purple corner"
 	},
+/obj/structure/chair/stool/directional/north,
 /turf/open/floor/iron/white,
 /area/science/robotics/lab)
 "bHc" = (
@@ -16619,6 +16624,24 @@
 /turf/open/floor/carpet,
 /area/service/bar)
 "bId" = (
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	dir = 1;
+	name = "Medical blue corner"
+	},
+/obj/effect/turf_decal/tile/blue{
+	color = "#73c2fb";
+	dir = 8;
+	name = "Medical blue corner"
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/science/robotics/lab)
+"bIe" = (
+/obj/item/clothing/under/costume_2021/patlabor_suit,
+/obj/structure/closet,
+/turf/open/floor/plating,
+/area/maintenance/starboard/aft)
+"bIf" = (
 /obj/structure/bodycontainer/morgue{
 	dir = 2
 	},
@@ -16638,26 +16661,12 @@
 	name = "Medical blue corner"
 	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/science/robotics/lab)
-"bIe" = (
-/obj/machinery/computer/operating{
-	name = "Robotics Operating Computer"
-	},
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron/dark/smooth_large,
-/area/science/robotics/lab)
-"bIf" = (
-/obj/structure/table/optable{
-	name = "Robotics Operating Table"
-	},
-/turf/open/floor/iron/dark/smooth_large,
-/area/science/robotics/lab)
+/area/science/robotics/mechbay)
 "bIg" = (
 /obj/structure/window{
 	dir = 4
 	},
 /obj/structure/table,
-/obj/item/book/manual/wiki/surgery,
 /obj/item/mmi,
 /obj/item/mmi,
 /obj/item/mmi,
@@ -16734,8 +16743,10 @@
 /turf/open/floor/iron/white,
 /area/security/checkpoint/science/research)
 "bIr" = (
-/obj/item/clothing/under/costume_2021/patlabor_suit,
-/obj/structure/closet,
+/obj/effect/spawner/random/maintenance/two,
+/obj/structure/closet/crate{
+	icon_state = "crateopen"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bIA" = (
@@ -26090,12 +26101,12 @@
 /turf/open/floor/plating,
 /area/construction)
 "cMa" = (
-/obj/effect/spawner/random/maintenance/two,
-/obj/structure/closet/crate{
-	icon_state = "crateopen"
+/obj/machinery/computer/operating{
+	name = "Robotics Operating Computer"
 	},
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
+/obj/machinery/light/directional/north,
+/turf/open/floor/iron/dark/smooth_large,
+/area/science/robotics/mechbay)
 "cMb" = (
 /obj/structure/closet/secure_closet/miner,
 /obj/effect/turf_decal/tile/purple{
@@ -27096,13 +27107,11 @@
 /turf/open/floor/iron/dark/textured_large,
 /area/science/robotics/lab)
 "dhm" = (
-/obj/structure/closet,
-/obj/item/clothing/under/costume_2021/char_suit,
-/obj/item/clothing/shoes/costume_2021/char_shoes,
-/obj/item/clothing/head/costume_2021/char_hat,
-/obj/item/clothing/gloves/costume_2021/char_gloves,
-/turf/open/floor/plating,
-/area/maintenance/starboard/aft)
+/obj/structure/table/optable{
+	name = "Robotics Operating Table"
+	},
+/turf/open/floor/iron/dark/smooth_large,
+/area/science/robotics/mechbay)
 "dhZ" = (
 /obj/effect/turf_decal/tile/blue{
 	color = "#4169E1";
@@ -30765,8 +30774,7 @@
 /turf/open/floor/iron/dark,
 /area/medical/medbay/lobby)
 "hNF" = (
-/obj/structure/table,
-/obj/effect/spawner/random/entertainment/coin,
+/obj/machinery/recharge_station,
 /turf/open/floor/iron/dark,
 /area/hallway/secondary/service)
 "hNL" = (
@@ -35461,6 +35469,14 @@
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/hallway/secondary/service)
+"ngw" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/table,
+/obj/item/book/manual/wiki/surgery,
+/turf/open/floor/iron/dark/smooth_large,
+/area/science/robotics/mechbay)
 "ngA" = (
 /obj/machinery/atmospherics/pipe/smart/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/simple/supply/hidden/layer4,
@@ -39823,7 +39839,6 @@
 /area/hallway/primary/fore)
 "suP" = (
 /obj/machinery/duct,
-/obj/machinery/recharge_station,
 /turf/open/floor/iron/dark,
 /area/hallway/secondary/service)
 "suQ" = (
@@ -43924,6 +43939,7 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/machinery/light_switch/directional/south,
 /turf/open/floor/iron,
 /area/science/robotics/mechbay)
 "xXO" = (
@@ -85437,7 +85453,7 @@ btr
 btm
 kFo
 wWD
-btm
+bFl
 bxm
 osl
 bAC
@@ -86473,7 +86489,7 @@ pAS
 pAS
 pAS
 lVG
-cMa
+rwY
 rwY
 rwY
 rwY
@@ -86729,8 +86745,8 @@ bCk
 aht
 aiv
 pAS
-pAS
-dhm
+bFG
+rwY
 rwY
 bxJ
 pqs
@@ -86985,8 +87001,8 @@ bMN
 bAI
 bRC
 bDL
-bFl
-pAS
+bze
+bIe
 bIr
 bJI
 bLk
@@ -87499,8 +87515,8 @@ bzc
 xUH
 bCm
 bDY
-bFn
 bze
+bIf
 bId
 bJx
 bKN
@@ -87756,9 +87772,9 @@ bzc
 oFs
 bCx
 bDY
-bFy
 bze
-bIe
+cMa
+bJy
 bJy
 bKO
 pAS
@@ -88010,12 +88026,12 @@ tQK
 adh
 bxr
 bMN
-xUH
+bFn
 bSU
 bDZ
-bFG
 bze
-bIf
+dhm
+bJy
 rnW
 bKP
 cvV
@@ -88270,8 +88286,8 @@ bze
 bAL
 bCp
 bCp
-bCp
 bze
+ngw
 bIg
 xym
 bKQ
@@ -88527,7 +88543,7 @@ bzf
 bSr
 bCq
 bDQ
-bFL
+bFy
 bGM
 bIh
 xSU
